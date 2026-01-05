@@ -1,0 +1,61 @@
+.tabs {
+    display: flex;
+    gap: 0.5rem;
+    overflow-x: auto;
+    padding-bottom: 0.5rem;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+.tabs::-webkit-scrollbar {
+    display: none;
+}
+
+.tab {
+    background: transparent;
+    border: 1px solid var(--card-border);
+    color: #888;
+    padding: 0.2rem 0.6rem;
+    border-radius: 4px;
+    /* Slightly squared for pro look */
+    font-size: 0.75rem;
+    font-weight: 500;
+    cursor: pointer;
+    white-space: nowrap;
+    transition: all 0.2s;
+}
+
+.tab:hover {
+    border-color: #555;
+    color: var(--foreground);
+}
+
+.tab.active {
+    background: var(--foreground);
+    color: var(--background);
+    border-color: var(--foreground);
+    font-weight: 600;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+}
+
+.featuredSlot {
+    margin-bottom: 0.5rem;
+}
+
+.list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.empty {
+    padding: 2rem;
+    text-align: center;
+    color: #555;
+    font-size: 0.8rem;
+    font-style: italic;
+}
