@@ -1,0 +1,1055 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Court Flooring | Rentak Hiasan Setia | Taraflex® Malaysia</title>
+<meta name="description" content="Olympic-grade Taraflex® sports flooring specifications, product construction, colour options and installation for Malaysian sports facilities.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@400;600;700;900&family=Sora:wght@300;400;500;600&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  /* ── Exact index.html light theme ── */
+  --bg:#F5F2EC; --bg-alt:#FFFFFF; --bg-warm:#FBF8F2;
+  --green:#1B4032; --green-mid:#2A6350; --green-br:#16A97A; --green-tint:#EBF7F2;
+  --gold:#C4902A; --gold-tint:#FBF3E4;
+  --text:#1C1C1E; --text-2:#4B5563; --text-3:#9CA3AF;
+  --border:rgba(0,0,0,0.08);
+  --card:#FFFFFF;
+  --shadow:0 2px 8px rgba(0,0,0,0.05),0 6px 24px rgba(0,0,0,0.06);
+  --shadow-lg:0 8px 40px rgba(0,0,0,0.1),0 24px 64px rgba(0,0,0,0.07);
+  /* Keep accent aliases so JS-rendered HTML still works */
+  --accent:var(--green-br); --accent-dim:var(--green-tint);
+  --black:var(--bg); --deep:var(--bg-warm); --white:var(--text);
+  --gray:var(--text-2);
+  --mint:var(--green-br); --mint-dim:var(--green-tint);
+  --font-d:'Unbounded',sans-serif;--font-b:'Sora',sans-serif;--font-m:'Space Mono',monospace;
+}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--text);font-family:var(--font-b);line-height:1.6;overflow-x:hidden}
+::-webkit-scrollbar{width:4px}::-webkit-scrollbar-track{background:var(--bg)}::-webkit-scrollbar-thumb{background:var(--green-br);border-radius:2px}
+
+/* CURSOR */
+.cursor{position:fixed;width:10px;height:10px;background:var(--mint);border-radius:50%;pointer-events:none;z-index:10000;transform:translate(-50%,-50%);mix-blend-mode:difference;transition:left .05s,top .05s}
+
+/* UTILS */
+.container{max-width:1280px;margin:0 auto;padding:0 48px}
+@media(max-width:768px){.container{padding:0 24px}}
+.reveal{opacity:0;transform:translateY(28px);transition:opacity .75s cubic-bezier(.16,1,.3,1),transform .75s cubic-bezier(.16,1,.3,1)}
+.reveal.visible{opacity:1;transform:translateY(0)}
+.rev-l{opacity:0;transform:translateX(-36px);transition:opacity .75s cubic-bezier(.16,1,.3,1),transform .75s cubic-bezier(.16,1,.3,1)}
+.rev-l.visible{opacity:1;transform:translateX(0)}
+.rev-r{opacity:0;transform:translateX(36px);transition:opacity .75s cubic-bezier(.16,1,.3,1),transform .75s cubic-bezier(.16,1,.3,1)}
+.rev-r.visible{opacity:1;transform:translateX(0)}
+.d1{transition-delay:.1s}.d2{transition-delay:.2s}.d3{transition-delay:.3s}.d4{transition-delay:.4s}.d5{transition-delay:.5s}
+
+.pill{display:inline-flex;align-items:center;gap:8px;font-family:var(--font-m);font-size:10px;letter-spacing:.15em;text-transform:uppercase;color:var(--green);padding:6px 14px;border:1px solid rgba(27,64,50,.25);border-radius:100px;background:var(--green-tint)}
+.pill::before{content:'';width:5px;height:5px;background:var(--green-br);border-radius:50%;animation:blink 2s infinite}
+@keyframes blink{0%,100%{opacity:1}50%{opacity:.3}}
+
+.sec-label{font-family:var(--font-m);font-size:10px;letter-spacing:.2em;text-transform:uppercase;color:var(--green-mid);margin-bottom:12px}
+.sec-head{font-family:var(--font-d);font-size:clamp(28px,3.5vw,44px);font-weight:900;line-height:.92;letter-spacing:-.02em;text-transform:uppercase}
+.sec-head .a{color:var(--green-br)}
+
+.btn-p{display:inline-flex;align-items:center;gap:10px;background:var(--green);color:#fff;font-family:var(--font-m);font-size:12px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;padding:15px 30px;border-radius:6px;text-decoration:none;border:none;cursor:pointer;transition:all .3s}
+.btn-p:hover{background:var(--green-mid);transform:translateY(-2px);box-shadow:0 10px 36px rgba(27,64,50,.3)}
+.btn-s{display:inline-flex;align-items:center;gap:10px;background:transparent;color:var(--green);font-family:var(--font-m);font-size:12px;letter-spacing:.08em;text-transform:uppercase;padding:15px 30px;border-radius:6px;text-decoration:none;border:1px solid rgba(27,64,50,.3);cursor:pointer;transition:all .3s}
+.btn-s:hover{border-color:var(--green);background:var(--green-tint)}
+
+/* NAV — matches index.html exactly */
+nav{position:fixed;top:0;left:0;right:0;z-index:1000;padding:20px 0;transition:all .35s ease;background:#FFFFFF;box-shadow:0 1px 0 rgba(0,0,0,.06)}
+nav.scrolled{padding:12px 0;background:rgba(255,255,255,.97);backdrop-filter:blur(20px);box-shadow:0 1px 0 rgba(0,0,0,.08),0 4px 24px rgba(0,0,0,.06)}
+.nav-inner{display:flex;align-items:center;justify-content:space-between;max-width:1280px;margin:0 auto;padding:0 32px;gap:24px}
+@media(max-width:768px){.nav-inner{padding:0 24px}}
+.logo{text-decoration:none;display:flex;flex-direction:column;gap:3px}
+.logo-main{font-family:var(--font-d);font-size:24px;font-weight:900;letter-spacing:.06em;line-height:1;text-transform:uppercase;color:var(--green)}
+.logo-main .lo-acc{color:var(--green-br)}
+.logo-sub{font-family:var(--font-m);font-size:9px;letter-spacing:.2em;text-transform:uppercase;color:var(--text-3)}
+.nav-links{display:flex;gap:36px;list-style:none;align-items:center}
+@media(max-width:900px){.nav-links{display:none}}
+.nav-links a{font-family:var(--font-m);font-size:10px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;white-space:nowrap;color:var(--text-2);text-decoration:none;transition:color .25s;position:relative}
+.nav-links a::after{content:'';position:absolute;bottom:-4px;left:0;right:0;height:2px;background:var(--green-br);transform:scaleX(0);transform-origin:left;transition:transform .3s;border-radius:1px}
+.nav-links a:hover{color:var(--green)}
+.nav-links a:hover::after{transform:scaleX(1)}
+.lo-acc{color:var(--green-br)}
+.nav-quote{font-family:var(--font-m);font-size:10px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;white-space:nowrap;color:#fff;background:var(--green);padding:10px 22px;border-radius:6px;text-decoration:none;transition:all .3s;flex-shrink:0}
+.nav-quote:hover{background:var(--green-mid);transform:translateY(-1px)}
+.hamburger{display:none;flex-direction:column;gap:5px;cursor:pointer;padding:8px}
+@media(max-width:900px){.hamburger{display:flex}}
+.hamburger span{width:24px;height:2px;background:var(--green);border-radius:1px;transition:all .3s}
+.mobile-menu{display:none;position:fixed;inset:0;background:#FFFFFF;z-index:999;flex-direction:column;align-items:center;justify-content:center;gap:36px}
+.mobile-menu.open{display:flex}
+.mobile-menu a{font-family:var(--font-d);font-size:22px;font-weight:700;color:var(--green);text-decoration:none;text-transform:uppercase;transition:color .3s}
+.mobile-menu a:hover{color:var(--green-br)}
+.mob-close{position:absolute;top:24px;right:24px;font-size:26px;color:var(--text-3);cursor:pointer;background:none;border:none;font-family:var(--font-d)}
+.hamburger{display:none;flex-direction:column;gap:5px;cursor:pointer;padding:8px}
+@media(max-width:900px){.hamburger{display:flex}}
+.hamburger span{width:24px;height:2px;background:var(--green);border-radius:1px;transition:all .3s}
+.mobile-menu{display:none;position:fixed;inset:0;background:var(--bg-alt);z-index:999;flex-direction:column;align-items:center;justify-content:center;gap:36px}
+.mobile-menu.open{display:flex}
+.mobile-menu a{font-family:var(--font-d);font-size:22px;font-weight:700;color:var(--green);text-decoration:none;text-transform:uppercase}
+.mobile-menu a:hover{color:var(--green-br)}
+.mob-close{position:absolute;top:24px;right:24px;font-size:26px;color:var(--text-3);cursor:pointer;background:none;border:none}
+
+/* HERO */
+#hero{position:relative;min-height:55vh;display:flex;align-items:flex-end;padding-bottom:48px;padding-top:80px;overflow:hidden}
+.hero-img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;filter:brightness(.45) saturate(.7)}
+.hero-ov1{position:absolute;inset:0;background:linear-gradient(to top,rgba(15,40,28,.96) 0%,rgba(15,40,28,.35) 50%,rgba(15,40,28,.05) 100%)}
+.hero-ov2{position:absolute;inset:0;background:linear-gradient(to right,rgba(15,40,28,.3) 0%,transparent 50%)}
+.hero-grid{position:absolute;inset:0;background-image:linear-gradient(rgba(255,255,255,.022) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.022) 1px,transparent 1px);background-size:80px 80px;mask-image:radial-gradient(ellipse 100% 100% at 50% 50%,black 20%,transparent 80%)}
+.hero-body{position:relative;z-index:2;max-width:820px}
+.hero-tag{margin-bottom:20px}
+.hero-title{font-family:var(--font-d);font-size:clamp(44px,7vw,90px);font-weight:900;line-height:.88;letter-spacing:-.025em;text-transform:uppercase;margin-bottom:20px;color:#FFFFFF}
+.hero-title .a{color:var(--accent)}
+.hero-sub{font-size:17px;color:rgba(255,255,255,.8);line-height:1.65;max-width:560px;margin-bottom:36px}
+.hero-meta{display:flex;gap:0;flex-wrap:wrap;border:1px solid rgba(255,255,255,.15);border-radius:8px;overflow:hidden;background:rgba(0,0,0,.2)}
+.hero-meta-item{padding:14px 24px;display:flex;flex-direction:column;gap:3px;border-right:1px solid rgba(255,255,255,.12);flex:1;min-width:120px}
+.hero-meta-item:last-child{border-right:none}
+.hm-label{font-family:var(--font-m);font-size:9px;letter-spacing:.15em;text-transform:uppercase;color:rgba(255,255,255,.55)}
+.hm-value{font-family:var(--font-d);font-size:13px;font-weight:700;color:#FFFFFF}
+.hm-value.hi{color:var(--accent)}
+
+/* OVERVIEW */
+#overview{padding:96px 0;background:var(--bg-warm)}
+.ov-grid{display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:start}
+@media(max-width:900px){.ov-grid{grid-template-columns:1fr;gap:48px}}
+.ov-title{font-family:var(--font-d);font-size:clamp(30px,4vw,50px);font-weight:900;line-height:.9;letter-spacing:-.025em;text-transform:uppercase;margin:16px 0 28px}
+.ov-title .a{color:var(--green-br)}
+.ov-body{font-size:15px;color:var(--text-2);line-height:1.85}
+.ov-body p{margin-bottom:14px}.ov-body p:last-child{margin-bottom:0}
+.ov-body strong{color:var(--text)}
+.hl-card{display:flex;gap:14px;padding:18px 20px;background:#FFFFFF;border:1px solid var(--border);border-radius:8px;box-shadow:var(--shadow);transition:all .3s;margin-bottom:10px}
+.hl-card:hover{border-color:var(--green-br);transform:translateY(-2px);box-shadow:var(--shadow-lg)}
+.hl-icon{width:38px;height:38px;border-radius:8px;background:var(--green-tint);border:1px solid rgba(22,169,122,.2);display:flex;align-items:center;justify-content:center;font-size:17px;flex-shrink:0}
+.hl-title{font-family:var(--font-d);font-size:13px;font-weight:700;text-transform:uppercase;letter-spacing:.02em;margin-bottom:3px}
+.hl-desc{font-size:11px;color:var(--text-2);line-height:1.5}
+
+/* CONSTRUCTION */
+#construction{padding:96px 0;background:var(--bg);position:relative;overflow:hidden}
+#construction::before{content:'LAYERS';position:absolute;right:-20px;top:50%;transform:translateY(-50%);font-family:var(--font-d);font-size:180px;font-weight:900;color:rgba(27,64,50,.04);text-transform:uppercase;pointer-events:none;letter-spacing:-.02em}
+.con-grid{display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:center}
+@media(max-width:900px){.con-grid{grid-template-columns:1fr;gap:56px}}
+.con-img-wrap{position:relative}
+.con-img{width:100%;max-width:440px;display:block;filter:drop-shadow(0 24px 60px rgba(0,0,0,.5))}
+.con-img-bg{position:absolute;inset:-20px;background:radial-gradient(ellipse 80% 80% at 50% 50%,rgba(0,229,160,.06),transparent);border-radius:16px;pointer-events:none}
+/* Layer stack diagram */
+.layer-stack{display:flex;flex-direction:column;gap:3px;margin-top:36px}
+.layer{position:relative;display:flex;align-items:stretch;cursor:default;transition:all .3s}
+.layer:hover .layer-bar{filter:brightness(1.2)}
+.layer:hover .layer-info{opacity:1;max-height:80px}
+.layer-num{font-family:var(--font-m);font-size:11px;color:var(--gray);width:28px;flex-shrink:0;display:flex;align-items:center;padding-top:2px}
+.layer-bar-wrap{flex:1;display:flex;flex-direction:column;gap:0}
+.layer-bar{border-radius:4px;display:flex;align-items:center;gap:14px;padding:0 18px;transition:all .3s;position:relative;overflow:hidden}
+.layer-bar::after{content:'';position:absolute;inset:0;background:linear-gradient(90deg,rgba(255,255,255,.06),transparent);pointer-events:none}
+.layer-icon{font-size:18px;flex-shrink:0}
+.layer-name{font-family:var(--font-d);font-size:13px;font-weight:700;text-transform:uppercase;letter-spacing:.02em;color:#FFFFFF}
+.layer-tag{font-family:var(--font-m);font-size:9px;letter-spacing:.12em;text-transform:uppercase;margin-left:auto;opacity:.7}
+.layer-info{font-size:12px;color:var(--text-2);line-height:1.5;padding:10px 18px 12px;background:rgba(27,64,50,.04);border-radius:0 0 4px 4px;overflow:hidden;max-height:0;opacity:0;transition:max-height .4s ease,opacity .3s;border:1px solid rgba(27,64,50,.1);border-top:none}
+.layer:hover .layer-info,.layer.active .layer-info{max-height:80px;opacity:1}
+
+/* COLOURS */
+#colours{padding:96px 0;background:#F5F5F0;position:relative}/* WHITE BACKGROUND */
+#colours .sec-label{color:#1a1a2e}
+#colours .sec-head{color:#06080C}
+#colours .sec-head .a{color:#00c487}
+.col-intro{font-size:15px;color:#555;line-height:1.7;max-width:520px;margin-top:16px}
+.col-tabs{display:flex;gap:2px;margin-top:40px;margin-bottom:36px;background:#E8E8E4;padding:4px;border-radius:8px;width:fit-content}
+.col-tab{font-family:var(--font-m);font-size:11px;letter-spacing:.12em;text-transform:uppercase;padding:10px 24px;border-radius:6px;border:none;background:transparent;color:#888;cursor:pointer;transition:all .3s}
+.col-tab.active{background:#fff;color:#06080C;box-shadow:0 2px 12px rgba(0,0,0,.1)}
+.colours-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(120px,1fr));gap:12px}
+.col-card{background:#fff;border-radius:10px;overflow:hidden;box-shadow:0 2px 12px rgba(0,0,0,.08);transition:all .3s;cursor:pointer}
+.col-card:hover{transform:translateY(-4px);box-shadow:0 8px 28px rgba(0,0,0,.14)}
+.col-img-wrap{width:100%;padding-top:80%;position:relative;background:#fff}
+.col-img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.col-name-wrap{padding:10px 12px 12px}
+.col-code{font-family:var(--font-m);font-size:9px;letter-spacing:.1em;color:#aaa;margin-bottom:2px}
+.col-name{font-family:var(--font-d);font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:.02em;color:#1a1a1a;line-height:1.2}
+.col-panel{display:none}.col-panel.active{display:block}
+.col-note{margin-top:32px;display:inline-flex;align-items:center;gap:10px;font-family:var(--font-m);font-size:10px;letter-spacing:.12em;text-transform:uppercase;color:#888;padding:10px 18px;border:1px solid #ddd;border-radius:100px;background:#f0f0ec}
+
+/* PRODUCTS */
+#products{padding:96px 0;background:var(--bg-warm)}
+.prod-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:2px;margin-top:48px}
+@media(max-width:900px){.prod-grid{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:500px){.prod-grid{grid-template-columns:1fr}}
+.prod-card{background:#FFFFFF;border:1px solid var(--border);padding:32px;position:relative;overflow:hidden;transition:all .4s cubic-bezier(.16,1,.3,1);box-shadow:var(--shadow)}
+.prod-card::after{content:'';position:absolute;bottom:0;left:0;right:0;height:2px;background:linear-gradient(90deg,var(--accent),var(--green-mid));transform:scaleX(0);transform-origin:left;transition:transform .4s}
+.prod-card:hover::after{transform:scaleX(1)}.prod-card:hover{transform:translateY(-3px)}
+.rec-badge{display:inline-flex;align-items:center;gap:5px;font-family:var(--font-m);font-size:9px;letter-spacing:.12em;text-transform:uppercase;color:#C4902A;padding:4px 10px;border:1px solid rgba(196,144,42,.3);border-radius:100px;background:rgba(196,144,42,.07);margin-bottom:18px}
+.prod-ico{width:48px;height:48px;border-radius:10px;background:var(--green-tint);border:1px solid rgba(22,169,122,.2);display:flex;align-items:center;justify-content:center;font-size:22px;margin-bottom:18px}
+.prod-code{font-family:var(--font-m);font-size:10px;letter-spacing:.15em;text-transform:uppercase;color:var(--green-br);margin-bottom:7px}
+.prod-name{font-family:var(--font-d);font-size:18px;font-weight:700;letter-spacing:-.01em;margin-bottom:10px;line-height:1.1}
+.prod-desc{font-size:13px;color:var(--text-2);line-height:1.6;margin-bottom:18px}
+.prod-feats{display:flex;flex-direction:column;gap:7px}
+.prod-feat{display:flex;align-items:center;gap:8px;font-size:12px;color:var(--text-2)}
+.prod-feat::before{content:'';width:3px;height:3px;background:var(--green-br);border-radius:50%;flex-shrink:0}
+
+/* SPECS */
+#specs{padding:96px 0;background:var(--bg)}
+.specs-grid{display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:start}
+@media(max-width:900px){.specs-grid{grid-template-columns:1fr;gap:48px}}
+.spec-table{margin-top:36px;display:flex;flex-direction:column}
+.spec-row{display:flex;justify-content:space-between;align-items:center;padding:16px 0;border-bottom:1px solid var(--border);gap:20px}
+.spec-row:first-child{border-top:1px solid var(--border)}
+.spec-label{font-family:var(--font-m);font-size:10px;letter-spacing:.12em;text-transform:uppercase;color:var(--gray);flex:1}
+.spec-val{font-family:var(--font-d);font-size:13px;font-weight:700;color:var(--text);text-align:right;flex:1}
+.spec-val.hi{color:var(--green-br)}
+.cert-list{margin-top:36px;display:flex;flex-direction:column;gap:10px}
+.cert{display:flex;gap:14px;padding:16px 18px;background:#FFFFFF;border:1px solid var(--border);border-radius:8px;box-shadow:var(--shadow);transition:all .3s}
+.cert:hover{border-color:var(--green-br);transform:translateY(-2px)}
+.cert-ico{font-size:22px;flex-shrink:0}
+.cert-name{font-family:var(--font-d);font-size:13px;font-weight:700;text-transform:uppercase;letter-spacing:.02em;margin-bottom:3px}
+.cert-desc{font-size:12px;color:var(--text-2)}
+.gerflor-note{margin-top:40px;padding:28px;background:var(--green-tint);border:1px solid rgba(22,169,122,.2);border-radius:8px;border-left:4px solid var(--green-br)}
+.gn-label{font-family:var(--font-m);font-size:9px;letter-spacing:.15em;text-transform:uppercase;color:var(--green-br);margin-bottom:10px}
+.gn-text{font-size:13px;color:var(--text-2);line-height:1.7}
+.gn-text strong{color:var(--text)}
+
+/* IDEAL FOR */
+#ideal{padding:96px 0;background:var(--bg-warm)}
+.ideal-grid{display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:start}
+@media(max-width:900px){.ideal-grid{grid-template-columns:1fr;gap:48px}}
+.ideal-cards{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:36px}
+@media(max-width:480px){.ideal-cards{grid-template-columns:1fr}}
+.ideal-card{padding:20px;background:#FFFFFF;border:1px solid var(--border);border-radius:8px;box-shadow:var(--shadow);transition:all .3s}
+.ideal-card:hover{border-color:var(--green-br);transform:translateY(-2px);box-shadow:var(--shadow-lg)}
+.ic-icon{font-size:26px;margin-bottom:10px}
+.ic-title{font-family:var(--font-d);font-size:13px;font-weight:700;text-transform:uppercase;letter-spacing:.02em;margin-bottom:5px}
+.ic-desc{font-size:12px;color:var(--text-2);line-height:1.5}
+.process-list{margin-top:36px;display:flex;flex-direction:column}
+.proc-item{display:flex;gap:18px;padding:20px 0;border-bottom:1px solid var(--border)}
+.proc-item:first-child{border-top:1px solid var(--border)}
+.proc-n{font-family:var(--font-d);font-size:28px;font-weight:900;color:rgba(27,64,50,.12);line-height:1;min-width:36px}
+.proc-title{font-family:var(--font-d);font-size:14px;font-weight:700;text-transform:uppercase;letter-spacing:.02em;margin-bottom:5px}
+.proc-desc{font-size:13px;color:var(--text-2);line-height:1.55}
+
+/* CTA */
+#cta{padding:96px 0;background:var(--black)}
+.cta-box{background:linear-gradient(135deg,rgba(0,229,160,.08),rgba(0,229,160,.02));border:1px solid rgba(0,229,160,.15);border-radius:16px;padding:80px;text-align:center;position:relative;overflow:hidden}
+@media(max-width:768px){.cta-box{padding:48px 28px}}
+.cta-box::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse 60% 50% at 50% 50%,rgba(0,229,160,.05) 0%,transparent 70%);pointer-events:none}
+.cta-title{font-family:var(--font-d);font-size:clamp(30px,5vw,60px);font-weight:900;text-transform:uppercase;letter-spacing:-.025em;line-height:.9;margin-bottom:18px}
+.cta-title .a{color:var(--green-br)}
+.cta-desc{font-size:15px;color:var(--gray);max-width:460px;margin:0 auto 36px;line-height:1.7}
+.cta-btns{display:flex;gap:14px;justify-content:center;flex-wrap:wrap}
+.cta-contacts{display:flex;gap:44px;justify-content:center;margin-top:40px;flex-wrap:wrap}
+.cc-item{display:flex;flex-direction:column;align-items:center;gap:4px}
+.cc-label{font-family:var(--font-m);font-size:9px;letter-spacing:.15em;text-transform:uppercase;color:var(--gray)}
+.cc-val{font-size:14px;color:var(--white);text-decoration:none;transition:color .3s}
+a.cc-val:hover{color:var(--accent)}
+
+/* FOOTER */
+footer{background:var(--bg-warm);border-top:1px solid var(--border);padding:36px 0}
+.foot-inner{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:14px}
+.foot-copy{font-family:var(--font-m);font-size:11px;letter-spacing:.08em;color:var(--gray)}
+.foot-back{display:flex;align-items:center;gap:7px;font-family:var(--font-m);font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:var(--gray);text-decoration:none;transition:color .3s}
+.foot-back:hover{color:var(--accent)}
+
+.scroll-top{position:fixed;bottom:36px;right:36px;width:46px;height:46px;background:var(--green);border-radius:50%;display:flex;align-items:center;justify-content:center;cursor:pointer;z-index:500;opacity:0;pointer-events:none;transition:all .3s;border:none;box-shadow:0 6px 28px rgba(27,64,50,.3)}
+.scroll-top.show{opacity:1;pointer-events:auto}
+.scroll-top:hover{background:var(--green-mid);transform:translateY(-3px)}
+body::after{content:'';position:fixed;inset:0;background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.4'/%3E%3C/svg%3E");opacity:.025;pointer-events:none;z-index:9998}
+</style>
+</head>
+<body>
+
+<div class="cursor" id="cur"></div>
+<button class="scroll-top" id="st" onclick="window.scrollTo({top:0,behavior:'smooth'})">
+  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 19V5M5 12l7-7 7 7"/></svg>
+</button>
+
+<!-- MOBILE MENU -->
+<div class="mobile-menu" id="mobileMenu">
+  <button class="mob-close" onclick="closeMobile()">✕</button>
+  <a href="index.html" onclick="closeMobile()">Home</a>
+  <a href="index.html#brands" onclick="closeMobile()">Our Brands</a>
+  <a href="index.html#courts" onclick="closeMobile()">Courts</a>
+  <a href="index.html#about" onclick="closeMobile()">About Us</a>
+  <a href="index.html#why" onclick="closeMobile()">Why Taraflex</a>
+  <a href="index.html#olympics" onclick="closeMobile()">Olympics</a>
+  <a href="index.html#contact" onclick="closeMobile()">Contact</a>
+</div>
+
+<nav id="nav">
+  <div class="nav-inner">
+    <a href="index.html" class="logo">
+      <span class="logo-main">RENTAK <span class="lo-acc">HIASAN</span></span>
+      <span class="logo-sub">Taraflex® Authorized Distributor</span>
+    </a>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="index.html#brands">Our Brands</a></li>
+      <li><a href="index.html#courts">Courts</a></li>
+      <li><a href="index.html#about">About Us</a></li>
+      <li><a href="index.html#why">Why Taraflex</a></li>
+      <li><a href="index.html#olympics">Olympics</a></li>
+      <li><a href="index.html#contact">Contact</a></li>
+    </ul>
+    <a href="index.html#contact" class="nav-quote">Get a Quote</a>
+    <div class="hamburger" onclick="openMobile()"><span></span><span></span><span></span></div>
+  </div>
+</nav>
+
+<div id="page"></div>
+
+<footer>
+  <div class="container">
+    <div class="foot-inner">
+      <span class="foot-copy">© 2024 Rentak Hiasan Setia Sdn Bhd · All product info & images © Gerflor®</span>
+      <a href="index.html" class="foot-back">
+        <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 12H5M12 5l-7 7 7 7"/></svg>
+        Return to Main Site
+      </a>
+    </div>
+  </div>
+</footer>
+
+<script>
+// ─── DATA ──────────────────────────────────────────────────────
+const BASE_WOOD = 'https://www.rentakhiasan.com/wp-content/gallery/comfort-wood/';
+const BASE_UNI  = 'https://www.rentakhiasan.com/wp-content/gallery/comfort-uni/';
+
+const COLORS = {
+  wood: [
+    { code:'6350', name:'Light Cherry', file:'6350-Light-cherry-design.jpg' },
+    { code:'6375', name:'Oak Design',   file:'6375-Oak-design.jpg' },
+    { code:'6381', name:'Maple Design', file:'6381-Maple-design.jpg' },
+  ],
+  uni: [
+    { code:'2404', name:'London Light Blue', file:'2404-London-Light-Blue.jpg' },
+    { code:'3764', name:'Taupe',             file:'3764-Taupe.jpg' },
+    { code:'6038', name:'Terracotta',        file:'6038-Terracotta.jpg' },
+    { code:'6146', name:'Coral',             file:'6146-Coral.jpg' },
+    { code:'6159', name:'Pink',              file:'6159-Pink.jpg' },
+    { code:'6180', name:'Red',               file:'6180-Red.jpg' },
+    { code:'6211', name:'Gold',              file:'6211-Gold.jpg' },
+    { code:'6347', name:'Beige',             file:'6347-Beige.jpg' },
+    { code:'6430', name:'Blue',              file:'6430-Blue.jpg' },
+    { code:'6431', name:'Teal',              file:'6431-Teal.jpg' },
+    { code:'6445', name:'Lagoon',            file:'6445-Lagoon.jpg' },
+    { code:'6557', name:'Forest',            file:'6557-Forest.jpg' },
+    { code:'6559', name:'Spring',            file:'6559-Spring.jpg' },
+    { code:'6570', name:'Mint Green',        file:'6570-Mint-Green.jpg' },
+    { code:'6758', name:'Silver Gray',       file:'6758-Silver-gray.jpg' },
+    { code:'6830', name:'Black',             file:'6830-Black.jpg' },
+    { code:'6873', name:'Anthracite',        file:'6873-Anthracite.jpg' },
+  ],
+};
+
+const LAYERS = [
+  {
+    num:'1', name:'Triple Action Protecsol®', icon:'🔶', tag:'Top Wear Layer',
+    color:'rgba(0,229,160,.18)', height:'52px',
+    desc:'The surface you play on. Triple-action anti-slip treatment permanently bonded to the surface — grip that never wears off, in all directions.',
+  },
+  {
+    num:'2', name:'D-Max / D-Max+', icon:'⬡', tag:'Performance Layer',
+    color:'rgba(41,121,255,.2)', height:'44px',
+    desc:'High-density stabilisation layer that maintains dimensional consistency. Resists heat, heavy loads, and daily wear without deforming.',
+  },
+  {
+    num:'3', name:'CXP HD', icon:'▣', tag:'Shock Core',
+    color:'rgba(232,184,109,.18)', height:'52px',
+    desc:'The shock absorption core. Delivers P1-class 25–35% force reduction, protecting joints from repetitive impact during sports play.',
+  },
+  {
+    num:'4', name:'Sanosol', icon:'◎', tag:'Anti-Bacterial Base',
+    color:'rgba(0,180,120,.15)', height:'36px',
+    desc:'Anti-bacterial backing layer that prevents microbial growth beneath the floor — essential for high-humidity Malaysian sports facilities.',
+  },
+];
+
+const COURTS = {
+  pickleball:{
+    name:'Pickleball', sub:'Court Flooring',
+    tagline:'Championship Surfaces for the World\'s Fastest-Growing Sport',
+    tag:'⚡ High Demand · Trending', accent:'#16A97A', nameColor:'#FFFFFF',
+    img:'https://images.unsplash.com/photo-1617144520113-88ae706a86eb?w=1400&q=80&fit=crop',
+    meta:[{l:'Court Size',v:'6.10m × 13.41m'},{l:'Net Height',v:'91.4 cm'},{l:'Shock Class',v:'P1 (25–35%)',hi:true},{l:'Surface',v:'Protecsol®',hi:true}],
+    overview:`<p>Pickleball is <strong>revolutionizing recreational sports across Malaysia</strong>. As the sport grows from community centers to full competition facilities, the court surface quality directly determines player experience, safety, and long-term revenue.</p>
+    <p>Taraflex® Evolution delivers the <strong>low-bounce consistency, superior grip, and precise ball response</strong> that competitive pickleball demands. The Protecsol® surface ensures players can sprint and pivot safely on every point.</p>`,
+    highlights:[
+      {icon:'🎯',t:'Consistent Ball Response',d:'Engineered surface for predictable, fair bounce at all skill levels.'},
+      {icon:'🛡️',t:'Protecsol® Anti-Slip',d:'Permanent triple-action grip. No degradation over time.'},
+      {icon:'⚡',t:'P1 Shock Absorption',d:'25–35% force reduction protects knees during lateral movement.'},
+      {icon:'🎨',t:'Court Line Marking',d:'Precise IFP-approved lines. Multiple colour options available.'},
+      {icon:'🔄',t:'Dry-Tex Installation',d:'Floating Dry-Tex system for quicker install and easy removal.'},
+      {icon:'🏆',t:'Competition Ready',d:'Meets USA Pickleball and international federation specifications.'},
+    ],
+    products:[
+      {code:'TF-EVO',name:'Taraflex® Evolution',icon:'🏃',rec:true,
+       desc:'Top recommendation for pickleball. P1 shock absorption, triple Protecsol® surface, Dry-Tex installation option.',
+       feats:['P1 Shock Absorption (25–35%)','Triple Action Protecsol®','D-Max / D-Max+ Stability','Dry-Tex System Available','Available in 20 colours']},
+      {code:'REC-60',name:'Recreation 60',icon:'🎪',rec:false,
+       desc:'Premium PVC solution for recreational courts. Excellent durability and aesthetics for club and leisure settings.',
+       feats:['Heavy-duty PVC construction','Comfortable underfoot feel','Wide colour selection','Easy maintenance','Cost-effective choice']},
+      {code:'TF-PERF',name:'Taraflex® Performance',icon:'⚡',rec:false,
+       desc:'For high-intensity facilities. P2 absorption (35–45%) for venues with heavy daily usage.',
+       feats:['P2 Shock Absorption (35–45%)','Competition-grade surface','Enhanced player safety','High foot-traffic rated']},
+    ],
+    specs:[
+      {l:'Court Dimensions',v:'6.10m × 13.41m'},{l:'Non-Volley Zone',v:'2.13m from net'},
+      {l:'Net Height (Centre)',v:'91.4 cm'},{l:'Net Height (Posts)',v:'107 cm'},
+      {l:'Shock Absorption',v:'P1 (25–35%)',hi:true},{l:'Surface Treatment',v:'Triple Action Protecsol®',hi:true},
+      {l:'Installation System',v:'Glue-Down or Dry-Tex'},{l:'Flooring Standard',v:'USA Pickleball / IFP'},
+    ],
+    certs:[
+      {i:'🏅',n:'International Standard',d:'Meets USA Pickleball and IFP court surface specifications'},
+      {i:'✅',n:'Gerflor ISO Certified',d:'ISO 9001 quality management certified manufacturing'},
+      {i:'🛡️',n:'P1 Safety Rated',d:'Shock absorption certified for player joint protection'},
+    ],
+    idealFor:[
+      {i:'🏢',t:'Sports Clubs',d:'Membership facilities seeking premium courts.'},
+      {i:'🏗️',t:'Developers',d:'Residential projects adding lifestyle sports amenities.'},
+      {i:'🏨',t:'Hotels & Resorts',d:'Premium recreational facilities for guests.'},
+      {i:'🏫',t:'Schools',d:'PE facilities and student recreation spaces.'},
+      {i:'🏛️',t:'Government',d:'Public recreation and community sports centers.'},
+      {i:'🎪',t:'Event Venues',d:'Tournament hosting with portable court setups.'},
+    ],
+  },
+  badminton:{
+    name:'Badminton', sub:'Court Rubber Flooring',
+    tagline:'The Ultimate in Player Comfort, Protection and Perfect Footing',
+    tag:'🏸 BWF Approved · Olympic Grade', accent:'#16A97A', nameColor:'#FFFFFF',
+    img:'https://images.unsplash.com/photo-1626224583764-f87db24ac4ea?w=1400&q=80&fit=crop',
+    meta:[{l:'System',v:'Portable · Ready to Go (10 min)'},{l:'Surface',v:'Structures Embossing',hi:true},{l:'Standard',v:'BWF Approved',hi:true},{l:'Olympic Legacy',v:'10 Consecutive Games',hi:false}],
+    overview:`<p>Whether for leisure or professional play, <strong>installing the right flooring is critical for every badminton court</strong>. Badminton court rubber flooring features comfort and good grip for superior performance and enhanced safety. For optimum support and protection, the flooring system demands a durable shock-absorbing surface to allow players to perform at their best.</p>
+    <p>At Rentak Hiasan, badminton court rubber flooring features <strong>triple-action Protecsol, CXP, and Sanosol</strong> for outstanding player comfort and protection. Our floorings have excellent slip resistance, natural durability, and shock absorption.</p>
+    <p>Easy to install, our rubber floorings are <strong>non-toxic, easy to maintain</strong>, and are suitable for various sports too — making them an ideal long-term investment for any multi-use facility.</p>`,
+    highlights:[
+      {icon:'🏸',t:'BWF Approved',d:'Official Badminton World Federation approval. Used in 10 consecutive Olympic Games.'},
+      {icon:'⏱️',t:'Ready to Go in 10 Minutes',d:'Portable playing surface available in ready-to-go format. Set up a full court in just 10 minutes.'},
+      {icon:'🦶',t:'Structures Embossing',d:'Purpose-built embossed texture for perfect footing during explosive badminton footwork.'},
+      {icon:'🛡️',t:'Excellent Slip Resistance',d:'Natural durability and superior slip resistance for safe, confident movement on court.'},
+      {icon:'🌿',t:'Non-Toxic & Easy to Maintain',d:'Non-toxic materials, easy to clean, suitable for various sports — ideal for schools and clubs.'},
+      {icon:'💪',t:'Outstanding Player Protection',d:'Triple-action Protecsol, CXP, and Sanosol deliver outstanding comfort and shock absorption.'},
+    ],
+    /* Badminton — 3-layer construction, unique to this product */
+    constructionImg:'https://www.rentakhiasan.com/wp-content/uploads/2019/03/s850700-q90-2fc0a9.jpg',
+    layerTitle:'BUILT IN <span class="a">3 LAYERS</span><br>OF PERFORMANCE',
+    layerDesc:'Taraflex® Badminton uses a purpose-built 3-layer system combining Protecsol® grip, CXP performance, and Sanosol anti-bacterial base — delivering the complete protection package the BWF demands.',
+    dryTexNote:false,
+    layers:[
+      {
+        num:'1', name:'Triple Action Protecsol®', icon:'🔶', tag:'Surface Treatment',
+        color:'rgba(0,229,160,.2)', height:'64px',
+        desc:'Triple-action anti-slip surface treatment with structures embossing for perfect footing. Provides excellent slip resistance during explosive badminton movements — lunges, jumps, and rapid direction changes in all directions.',
+      },
+      {
+        num:'2', name:'CXP', icon:'▣', tag:'Performance Core',
+        color:'rgba(41,121,255,.2)', height:'60px',
+        desc:'CXP performance core delivers outstanding player comfort and shock absorption throughout extended training and competition. Non-toxic and naturally durable — engineered to protect players across thousands of hours of intensive play.',
+      },
+      {
+        num:'3', name:'Sanosol', icon:'◎', tag:'Anti-Bacterial Base',
+        color:'rgba(0,180,120,.15)', height:'48px',
+        desc:'Anti-bacterial Sanosol base layer prevents microbial growth beneath the floor — essential for Malaysia\'s tropical humidity. Ensures long-term hygiene and structural integrity in heavily-used sports facilities.',
+      },
+    ],
+    /* Badminton-specific colour — only 1 official option */
+    courtColors:{
+      label:'Official Badminton Colour',
+      base:'https://www.rentakhiasan.com/wp-content/gallery/badminton/',
+      note:'Taraflex® Badminton is available in the official competition colour — approved for international badminton courts and used at the highest competitive levels worldwide.',
+      items:[
+        { code:'6570', name:'Mint Green', file:'6570-Mint-Green.jpg' },
+      ],
+    },
+    products:[
+      {code:'TF-BAD',name:'Taraflex® Badminton',icon:'🏸',rec:true,
+       desc:'The ultimate badminton rubber flooring. Triple-action Protecsol, CXP, and Sanosol for outstanding comfort and protection. Ready to go in 10 minutes with the portable system.',
+       feats:['BWF Approved','Triple Action Protecsol® + CXP + Sanosol','Structures embossing for perfect footing','Portable ready-to-go (10 min)','Non-toxic & easy to maintain']},
+      {code:'TF-EVO',name:'Taraflex® Evolution',icon:'🏃',rec:false,
+       desc:'Versatile multi-sport alternative for shared halls. P1 absorption with triple Protecsol® suitable for recreational badminton alongside other sports.',
+       feats:['P1 Shock Absorption (25–35%)','Triple Protecsol® Anti-Slip','Multi-sport capable','Dry-Tex system available','20 colour options']},
+      {code:'TF-PERF',name:'Taraflex® Performance',icon:'⚡',rec:false,
+       desc:'For high-traffic permanent badminton training academies. P2 class for facilities with intense daily sessions.',
+       feats:['P2 Shock Absorption (35–45%)','Heavy daily usage rated','Enhanced joint protection','Permanent installation choice']},
+    ],
+    specs:[
+      {l:'System Type',v:'Portable · Ready to Go (10 min)',hi:true},
+      {l:'Surface Texture',v:'Structures Embossing',hi:true},
+      {l:'Construction',v:'3-Layer (Protecsol® + CXP + Sanosol)'},
+      {l:'Doubles Court Size',v:'13.4m × 6.1m'},
+      {l:'Singles Court Size',v:'13.4m × 5.18m'},
+      {l:'Net Height (Centre)',v:'1.524m'},
+      {l:'Net Height (Posts)',v:'1.55m'},
+      {l:'Federation Standard',v:'BWF Approved',hi:true},
+    ],
+    certs:[
+      {i:'🏸',n:'BWF Approved',d:'Badminton World Federation official competitive court surface approval'},
+      {i:'🏅',n:'10× Olympic Games',d:'Selected for 10 consecutive Olympic Games from Montreal 1976 to London 2012'},
+      {i:'✅',n:'Gerflor ISO Certified',d:'Non-toxic, ISO-certified manufacturing by Gerflor, established 1947'},
+    ],
+    idealFor:[
+      {i:'🏟️',t:'National Stadiums',d:'State and national competition venues needing BWF-approved surfaces.'},
+      {i:'🏫',t:'Schools & Universities',d:'PE halls — non-toxic, easy to maintain, suitable for various sports.'},
+      {i:'🏢',t:'Sports Clubs',d:'Commercial badminton clubs and training academies.'},
+      {i:'🏋️',t:'Training Centres',d:'Elite athlete development with portable setup flexibility.'},
+      {i:'🏗️',t:'Developers',d:'Mixed-use residential and commercial sports amenities.'},
+      {i:'🏛️',t:'Government',d:'SUKMA venues, sports council facilities and community halls.'},
+    ],
+  },
+  tabletennis:{
+    name:'Table Tennis', sub:'Court Flooring',
+    tagline:'A Portable Solution Engineered in Partnership with International Table Tennis Federations',
+    tag:'🏓 ITTF Approved · Portable System', accent:'#16A97A', nameColor:'#FFFFFF',
+    img:'https://www.rentakhiasan.com/wp-content/uploads/2023/11/s1600-q90-b62e50-opt-1.jpg',
+    meta:[{l:'Type',v:'Specialised TT Flooring'},{l:'System',v:'Portable · Ready to Go'},{l:'Surface',v:'Structures Embossing',hi:true},{l:'Standard',v:'ITTF Compliant',hi:true}],
+    overview:`<p>Taraflex® Table Tennis is a <strong>portable solution engineered and developed in partnership with international table tennis federations</strong> — designed specifically for the unique demands of competitive and recreational ping pong at every level.</p>
+    <p>The <strong>structures embossing</strong> on the playing surface creates the perfect footing for rapid lateral footwork, precise pivots, and explosive movement. Players step onto the court knowing every movement will be supported with <strong>excellent comfort and protection</strong>.</p>
+    <p>With its <strong>ready-to-go portable system</strong>, Taraflex® Table Tennis is the ideal solution for multi-purpose halls, training academies, and competition venues that need a dedicated, easy-to-install surface that can be set up and packed away as required.</p>`,
+    highlights:[
+      {icon:'🏓',t:'ITTF Approved',d:'Engineered and developed in partnership with international table tennis federations.'},
+      {icon:'🔄',t:'Ready-to-Go Portable',d:'Easy-to-install portable playing surface. Set up and pack away with minimal effort.'},
+      {icon:'🦶',t:'Structures Embossing',d:'Purpose-built embossed texture for perfect footing during rapid footwork and direction changes.'},
+      {icon:'🛡️',t:'Excellent Player Protection',d:'Engineered for player comfort and protection throughout extended training and competition sessions.'},
+      {icon:'⚡',t:'Rapid Installation',d:'Available in ready-to-go format. Significantly faster setup than permanent flooring systems.'},
+      {icon:'🎯',t:'Specialised TT Surface',d:'Not a generic sports floor — purpose-engineered specifically for table tennis play.'},
+    ],
+    /* Table Tennis — 2-layer construction, unique to this product */
+    constructionImg:'https://www.rentakhiasan.com/wp-content/uploads/2019/03/s850700-q90-4ff20b.jpg',
+    layerTitle:'BUILT IN <span class="a">2 LAYERS</span><br>OF PRECISION',
+    layerDesc:'Taraflex® Table Tennis uses a purpose-built 2-layer system developed in direct collaboration with international table tennis federations — delivering exactly the surface performance the sport demands.',
+    dryTexNote:false,
+    layers:[
+      {
+        num:'1', name:'Triple Action Protecsol®', icon:'🔶', tag:'Surface Treatment',
+        color:'rgba(0,229,160,.2)', height:'68px',
+        desc:'Triple-action anti-slip surface treatment with structures embossing — the defining feature of this floor. Creates the precise texture needed for perfect footing during rapid table tennis footwork, without interfering with the playing area.',
+      },
+      {
+        num:'2', name:'CXP', icon:'▣', tag:'Comfort & Performance Core',
+        color:'rgba(41,121,255,.2)', height:'76px',
+        desc:'CXP core layer delivers excellent player comfort and protection throughout extended training and competition. Engineered with international federations to provide the precise underfoot response table tennis athletes require.',
+      },
+    ],
+    /* TT-specific colours — only 2 official options (not the Evolution range) */
+    courtColors:{
+      label:'Official Table Tennis Colours',
+      base:'https://www.rentakhiasan.com/wp-content/gallery/table-tennis/',
+      note:'Taraflex® Table Tennis is available in 2 official competition colours, approved by international table tennis federations.',
+      items:[
+        { code:'6109', name:'Framboise Canvas Grain', file:'6109-Framboise-Canvas-Grain.jpg' },
+        { code:'6109', name:'Framboise Sport Grain',  file:'6109-Framboise-Sport-Grain.jpg'  },
+      ],
+    },
+    products:[
+      {code:'TF-TT',name:'Taraflex® Table Tennis',icon:'🏓',rec:true,
+       desc:'Purpose-built portable table tennis flooring developed with international federations. Ready-to-go system with structures embossing for perfect footing.',
+       feats:['ITTF Approved','Portable ready-to-go system','Structures embossing texture','Excellent player comfort','Easy installation & removal']},
+      {code:'TF-PERF',name:'Taraflex® Performance',icon:'⚡',rec:false,
+       desc:'For permanent installations in high-frequency training facilities. P2 absorption for daily intensive sessions.',
+       feats:['P2 Shock Absorption (35–45%)','Heavy daily usage rated','Enhanced joint protection','Permanent installation']},
+      {code:'TF-EVO',name:'Taraflex® Evolution',icon:'🏃',rec:false,
+       desc:'Multi-sport alternative for shared halls where table tennis is one of several activities on the same floor.',
+       feats:['P1 Shock Absorption','Triple Protecsol® Anti-Slip','Multi-sport capable','20 colour options']},
+    ],
+    specs:[
+      {l:'System Type',v:'Portable · Ready to Go',hi:true},
+      {l:'Surface Texture',v:'Structures Embossing',hi:true},
+      {l:'Construction',v:'2-Layer (Protecsol® + CXP)'},
+      {l:'Min. Playing Area',v:'14m × 7m per table'},
+      {l:'Table Dimensions',v:'2.74m × 1.525m'},
+      {l:'Table Height',v:'76cm'},
+      {l:'Net Height',v:'15.25cm'},
+      {l:'Federation Standard',v:'ITTF Approved',hi:true},
+    ],
+    certs:[
+      {i:'🏓',n:'ITTF Partnership',d:'Engineered and developed with international table tennis federations'},
+      {i:'✅',n:'Gerflor ISO Certified',d:'ISO 9001 quality management certified manufacturing'},
+      {i:'🔄',n:'Portable Approved',d:'Ready-to-go system verified for competition and training use'},
+    ],
+    idealFor:[
+      {i:'🏛️',t:'National Training Centres',d:'Elite athlete development and national squad training.'},
+      {i:'🏟️',t:'Competition Venues',d:'State and national tournament facilities.'},
+      {i:'🏢',t:'Table Tennis Clubs',d:'Commercial clubs and recreational associations.'},
+      {i:'🏫',t:'Schools',d:'PE facilities and student sports programmes.'},
+      {i:'🎪',t:'Multi-Purpose Halls',d:'Halls needing a portable, removable dedicated TT surface.'},
+      {i:'🏗️',t:'Sports Complexes',d:'Facilities running multiple sports disciplines.'},
+    ],
+  },
+  futsal:{
+    name:'AFC Futsal', sub:'Court Flooring',
+    tagline:'Superior Traction & Protection for the World\'s Most Fast-Paced Indoor Sport',
+    tag:'⚽ AFC Standard · FIFA Compliant', accent:'#16A97A',
+    img:'https://images.unsplash.com/photo-1574629810360-7efbbe195018?w=1400&q=80&fit=crop',
+    meta:[{l:'Court Size (FIFA)',v:'25–42m × 16–25m'},{l:'Standard',v:'AFC / FIFA'},{l:'Surface',v:'Triple Protecsol®',hi:true},{l:'Construction',v:'2-Layer System',hi:true}],
+    overview:`<p>Futsal is among the <strong>fastest-growing sports in the world</strong>. As an exciting and fast-paced sport, futsal demands a safe and well-built flooring to protect players and deliver the proper traction needed when performing sharp cuts — while allowing the soccer ball to roll and bounce properly.</p>
+    <p>For outstanding protection and superior traction, Taraflex® AFC Futsal holds <strong>triple-action Protecsol® surface treatment and high-density CXP closed-cell foams backing</strong> to set the right stage for the game and promote better coordination among players.</p>
+    <p>Our high-quality futsal flooring provides <strong>customisation that matches every training need, budget requirement, and room capacity</strong> — from community halls to full AFC-standard competition venues.</p>`,
+    highlights:[
+      {icon:'⚽',t:'AFC & FIFA Compliant',d:'Meets Asian Football Confederation and FIFA futsal court surface standards.'},
+      {icon:'🔱',t:'Triple Action Protecsol®',d:'Three-layer anti-slip surface treatment for maximum grip in all directions during sharp cuts.'},
+      {icon:'🏗️',t:'High-Density CXP Foams',d:'Closed-cell foam backing for superior shock absorption and correct ball bounce response.'},
+      {icon:'⚡',t:'Correct Ball Roll',d:'Engineered surface hardness allows the soccer ball to roll and bounce exactly as the game demands.'},
+      {icon:'🛡️',t:'Player Protection',d:'Protects joints from the heavy impact loads of continuous high-intensity futsal play.'},
+      {icon:'🎨',t:'Full Line Marking',d:'Complete court marking service in AFC-approved colours included.'},
+    ],
+    /* AFC Futsal — 2-layer construction specific to this product */
+    constructionImg:'https://www.rentakhiasan.com/wp-content/uploads/2019/03/s850700-q90-72b75e.jpg',
+    layerTitle:'BUILT IN <span class="a">2 LAYERS</span><br>OF PROTECTION',
+    layerDesc:'Taraflex® AFC Futsal is precision-engineered with two specialist layers — designed for the explosive impacts, sharp cuts, and high ball-contact demands of competitive indoor futsal.',
+    dryTexNote:false,
+    layers:[
+      {
+        num:'1', name:'Triple Action Protecsol®', icon:'🔶', tag:'Surface Treatment',
+        color:'rgba(0,229,160,.2)', height:'72px',
+        desc:'Triple-action anti-slip surface treatment permanently bonded to the playing surface. Provides the superior traction players need for sharp direction changes and explosive movement — without restricting the natural roll of the futsal ball.',
+      },
+      {
+        num:'2', name:'High Density CXP Closed-Cell Foams', icon:'▣', tag:'Performance Backing',
+        color:'rgba(232,184,109,.22)', height:'80px',
+        desc:'High-density closed-cell foam backing absorbs the repeated heavy impact loads of intense futsal play. Maintains the precise hardness required for correct ball bounce and roll, while cushioning players\' joints across multiple daily sessions.',
+      },
+    ],
+    products:[
+      {code:'TF-AFC',name:'Taraflex® AFC Futsal',icon:'⚽',rec:true,
+       desc:'The definitive AFC futsal flooring. Triple Protecsol® surface treatment on high-density CXP closed-cell foams — purpose-built for the demands of competitive indoor futsal.',
+       feats:['AFC / FIFA Compliant','Triple Action Protecsol® Surface','High-Density CXP Closed-Cell Foams','Correct ball roll & bounce','Daily heavy usage rated']},
+      {code:'TF-EVO',name:'Taraflex® Evolution',icon:'🏃',rec:false,
+       desc:'Versatile multi-sport alternative for recreational futsal in shared halls. P1 shock absorption with triple Protecsol® surface.',
+       feats:['P1 Shock Absorption (25–35%)','Triple Protecsol® Anti-Slip','Multi-sport flexibility','Dry-Tex system available','Good value choice']},
+      {code:'TF-MULTI',name:'Taraflex® Multi-Use',icon:'🔄',rec:false,
+       desc:'For facilities alternating between futsal and other events. D-Max heat resistance handles varied usage.',
+       feats:['P1 Shock Absorption + D-Max','High heat resistance','Sports & events capable','Versatile multi-purpose solution']},
+    ],
+    specs:[
+      {l:'Court Size (FIFA)',v:'25–42m × 16–25m'},{l:'Court Size (AFC)',v:'38–42m × 18–25m'},
+      {l:'Goal Dimensions',v:'3m × 2m'},{l:'Penalty Area',v:'6m radius arc'},
+      {l:'Surface Treatment',v:'Triple Action Protecsol®',hi:true},{l:'Backing',v:'High Density CXP Closed-Cell Foams',hi:true},
+      {l:'Federation Standard',v:'AFC / FIFA Compliant',hi:true},{l:'Recommended Thickness',v:'7mm'},
+    ],
+    certs:[
+      {i:'⚽',n:'AFC Compliant',d:'Meets Asian Football Confederation futsal court surface specification'},
+      {i:'🌍',n:'FIFA Standard',d:'Meets FIFA indoor futsal court surface requirements'},
+      {i:'✅',n:'Gerflor ISO Certified',d:'ISO-certified manufacturing by Gerflor, established France 1947'},
+    ],
+    idealFor:[
+      {i:'🏟️',t:'Indoor Sports Halls',d:'Dedicated futsal facilities and multi-sport complexes.'},
+      {i:'🏫',t:'Schools & Universities',d:'PE halls and student sports programmes.'},
+      {i:'🏢',t:'Sports Clubs',d:'Commercial futsal courts for leagues and training academies.'},
+      {i:'🏗️',t:'Developers',d:'Township and residential sports amenity projects.'},
+      {i:'🏛️',t:'Government Bodies',d:'Municipal sports centres and district recreational facilities.'},
+      {i:'🎪',t:'Event Venues',d:'Versatile multi-use spaces for tournaments and competitions.'},
+    ],
+  },
+  ballroom:{
+    name:'Ballroom', sub:'& Dance Floor',
+    tagline:'Elegant Surfaces for Effortless, Graceful Movement',
+    tag:'💃 Premium Finish', accent:'#C4902A',
+    img:'https://images.unsplash.com/photo-1519671482749-fd09be7ccebf?w=1400&q=80&fit=crop',
+    meta:[{l:'Surface',v:'Smooth Premium PVC'},{l:'Finish',v:'Low Reflection'},{l:'Comfort',v:'Anti-Fatigue',hi:true},{l:'Colours',v:'20+ Options',hi:true}],
+    overview:`<p>A premium ballroom floor must allow <strong>fluid, graceful movement while protecting dancers</strong> during hours of performance. The balance between glide and grip is everything.</p>
+    <p>Taraflex® Recreation 60 provides the <strong>smooth, even surface professional dancers require</strong> — enough slip for elegant spins, enough grip to prevent accidents on the busiest event nights.</p>`,
+    highlights:[
+      {icon:'💃',t:'Dance-Calibrated Glide',d:'Friction calibrated for ballroom, latin, and social dance.'},
+      {icon:'✨',t:'Elegant Aesthetics',d:'Premium finish elevates any ballroom or event space.'},
+      {icon:'🔇',t:'Sound Dampening',d:'Reduces noise so music stays clear, not echoey.'},
+      {icon:'💪',t:'Anti-Fatigue',d:'Comfort underfoot for dancers standing long periods.'},
+      {icon:'🎨',t:'Wide Colour Range',d:'Extensive palette to match your interior and branding.'},
+      {icon:'🧹',t:'Easy Maintenance',d:'Simple cleaning keeps the floor pristine event after event.'},
+    ],
+    products:[
+      {code:'REC-60',name:'Recreation 60',icon:'💃',rec:true,
+       desc:'Premier choice for ballrooms. Premium PVC with perfect glide-to-grip balance and excellent aesthetics for high-end venues.',
+       feats:['Premium PVC surface','Dance-calibrated friction','Elegant visual finish','Anti-fatigue comfort','Easy event cleanup']},
+      {code:'REC-45',name:'Recreation 45',icon:'🎪',rec:false,
+       desc:'Versatile alternative for mid-range ballrooms where dance is one of many activities.',
+       feats:['Quality PVC finish','Multi-function suitable','Good aesthetic quality','Cost-effective option']},
+      {code:'TF-SURF',name:'Taraflex® Surface',icon:'🎯',rec:false,
+       desc:'For professional dance studios and competition dance floors requiring precise low-resistance movement.',
+       feats:['Competition dance surface','Low rolling resistance','Protecsol® Anti-Slip','Professional grade']},
+    ],
+    specs:[
+      {l:'Surface Type',v:'Premium Smooth PVC'},{l:'Finish',v:'Low Reflection / Matt'},
+      {l:'Thickness',v:'2mm – 4.5mm'},{l:'Wear Layer',v:'0.7mm – 1.5mm'},
+      {l:'Comfort Class',v:'Anti-Fatigue Rated',hi:true},{l:'Slip Resistance',v:'Dance-Calibrated',hi:true},
+      {l:'Maintenance',v:'Dry or Damp Mop'},{l:'Colour Options',v:'20+ Standard Colours'},
+    ],
+    certs:[
+      {i:'💃',n:'Dance Venue Approved',d:'Surface characteristics verified for dance performance safety'},
+      {i:'✅',n:'Gerflor ISO Certified',d:'ISO 9001 quality management certified manufacturing'},
+      {i:'🏢',n:'Commercial Grade',d:'Rated for high-footfall commercial event environments'},
+    ],
+    idealFor:[
+      {i:'🏨',t:'Hotels & Resorts',d:'Ballrooms for weddings and gala events.'},
+      {i:'💃',t:'Dance Studios',d:'Professional and recreational dance training.'},
+      {i:'🎭',t:'Cultural Centres',d:'Performing arts and cultural event spaces.'},
+      {i:'🏛️',t:'Government Halls',d:'Official ceremonial and function facilities.'},
+      {i:'🏫',t:'School Halls',d:'Multi-purpose halls for performance and events.'},
+      {i:'🎪',t:'Event Venues',d:'Commercial event hire and convention centres.'},
+    ],
+  },
+  eventhall:{
+    name:'Event Hall', sub:'& Multipurpose Flooring',
+    tagline:'Versatile Championship-Grade Floors for Any Occasion',
+    tag:'🏟️ Multi-Use · High Durability', accent:'#1565C0',
+    img:'https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=1400&q=80&fit=crop',
+    meta:[{l:'Use Type',v:'Multipurpose'},{l:'Durability',v:'Commercial Heavy-Duty'},{l:'Heat Resistance',v:'D-Max Treatment',hi:true},{l:'Colours',v:'20+ Options',hi:true}],
+    overview:`<p>Modern event halls demand flooring that <strong>adapts to any configuration</strong> — exhibitions, banquet dinners, corporate conferences, and sports competitions, all on the same floor.</p>
+    <p>Taraflex® Recreation and Multi-Use flooring provides the <strong>durability, aesthetic refinement, and safety</strong> needed to handle diverse events with consistent excellence, year after year.</p>`,
+    highlights:[
+      {icon:'🔄',t:'True Multipurpose',d:'Equally suited to sports, exhibitions, dinners, and conferences.'},
+      {icon:'🛡️',t:'Chemical Resistant',d:'Withstands cleaning agents and heavy event traffic.'},
+      {icon:'🎨',t:'Aesthetic Quality',d:'Refined appearance that enhances any event environment.'},
+      {icon:'🔧',t:'Low Maintenance',d:'Simple cleaning regimen saves time and cost between events.'},
+      {icon:'🌡️',t:'D-Max Heat Resistant',d:'Resists heat from staging equipment and event lighting.'},
+      {icon:'⚖️',t:'Heavy Load Rated',d:'Handles exhibition booths, stage rigs, and rolling loads.'},
+    ],
+    products:[
+      {code:'REC-60',name:'Recreation 60',icon:'🎪',rec:true,
+       desc:'Benchmark multipurpose floor. Premium PVC combining aesthetics with heavy-duty durability for all event hall activities.',
+       feats:['Heavy commercial duty','Premium visual finish','Chemical resistant','Wide colour range','Easy maintenance']},
+      {code:'TF-MULTI',name:'Taraflex® Multi-Use',icon:'🔄',rec:false,
+       desc:'For event halls that double as sports venues. P1 absorption with D-Max handles competition and event loads.',
+       feats:['P1 Shock Absorption','D-Max Heat Resistance','Sports + events capable','Versatile solution']},
+      {code:'REC-45',name:'Recreation 45',icon:'🏢',rec:false,
+       desc:'Cost-effective option for light-use halls and meeting spaces where budget is a priority.',
+       feats:['Good durability rating','Clean aesthetic finish','Easy installation','Budget-conscious choice']},
+    ],
+    specs:[
+      {l:'Surface Type',v:'Premium PVC Composite'},{l:'Thickness',v:'2mm – 7mm'},
+      {l:'Load Rating',v:'Commercial Heavy Duty',hi:true},{l:'Heat Resistance',v:'D-Max Treatment',hi:true},
+      {l:'Chemical Resistance',v:'High — EN 423 Rated'},{l:'Slip Resistance',v:'R9 Classification'},
+      {l:'Colour Options',v:'20+ Standard Colours'},{l:'Maintenance',v:'Damp Mop or Machine'},
+    ],
+    certs:[
+      {i:'🏢',n:'Commercial Grade',d:'EN 685 Class 43 rated for high-footfall commercial environments'},
+      {i:'🛡️',n:'Chemical Resistant',d:'EN 423 certification for commercial cleaning agents'},
+      {i:'✅',n:'Gerflor ISO Certified',d:'ISO 14001 environmental + ISO 9001 quality certified'},
+    ],
+    idealFor:[
+      {i:'🏛️',t:'Convention Centres',d:'Conferences, trade shows, and exhibitions.'},
+      {i:'🏨',t:'Hotel Ballrooms',d:'Weddings, corporate events, and galas.'},
+      {i:'🏟️',t:'Indoor Stadiums',d:'Sports events converting to concerts or exhibitions.'},
+      {i:'🏗️',t:'Developers',d:'Mixed-use commercial buildings with event halls.'},
+      {i:'🏫',t:'Schools',d:'Assembly halls, sports halls, and graduation venues.'},
+      {i:'🏛️',t:'Government',d:'Public halls and community function spaces.'},
+    ],
+  },
+};
+
+// ─── RENDER ──────────────────────────────────────────────────
+const COURT_GRADIENTS = {
+  pickleball:  'linear-gradient(135deg,#0a3d1f 0%,#1a6b3c 40%,#0d4f2a 100%)',
+  badminton:   'linear-gradient(135deg,#0a1628 0%,#1a2f55 40%,#0d1e3d 100%)',
+  tabletennis: 'linear-gradient(135deg,#1a0a28 0%,#3d1a55 40%,#2a0d4f 100%)',
+  futsal:      'linear-gradient(135deg,#1a1a0a 0%,#3d3a1a 40%,#2a280d 100%)',
+  aerobics:    'linear-gradient(135deg,#2a1a0a 0%,#55341a 40%,#4f2a0d 100%)',
+  multiuse:    'linear-gradient(135deg,#0a1a2a 0%,#1a3a55 40%,#0d2a4f 100%)',
+};
+
+function render() {
+  const key = new URLSearchParams(location.search).get('court') || 'pickleball';
+  const d = COURTS[key] || COURTS.pickleball;
+  document.title = `${d.name} ${d.sub} | Rentak Hiasan Setia`;
+  document.documentElement.style.setProperty('--accent', d.accent);
+  // Set hero fallback gradient (shows if image blocked/fails)
+  const heroEl = document.getElementById('hero');
+  if (heroEl) heroEl.style.background = COURT_GRADIENTS[key] || COURT_GRADIENTS.pickleball;
+
+  document.getElementById('page').innerHTML = `
+
+  <!-- HERO -->
+  <section id="hero">
+    <img class="hero-img" src="${d.img}" alt="${d.name} flooring" onerror="this.style.opacity='0'">
+    <div class="hero-ov1"></div>
+    <div class="hero-ov2"></div>
+    <div class="hero-grid"></div>
+    <div class="container">
+      <div class="hero-body">
+
+        <div class="hero-tag"><span class="pill">${d.tag}</span></div>
+        <h1 class="hero-title"><span style="color:${d.nameColor||'#FFFFFF'}">${d.name}</span><br><span class="a">${d.sub}</span></h1>
+        <p class="hero-sub">${d.tagline}</p>
+        <div class="hero-meta">
+          ${d.meta.map(m=>`<div class="hero-meta-item"><span class="hm-label">${m.l}</span><span class="hm-value ${m.hi?'hi':''}">${m.v}</span></div>`).join('')}
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- OVERVIEW -->
+  <section id="overview">
+    <div class="container">
+      <div class="ov-grid">
+        <div class="rev-l">
+          <div class="sec-label">Court Overview</div>
+          <h2 class="ov-title">WHY <span class="a">TARAFLEX®</span><br>FOR ${d.name.toUpperCase()}</h2>
+          <div class="ov-body">${d.overview}</div>
+          <div style="margin-top:32px;display:flex;gap:14px;flex-wrap:wrap">
+            <a href="index.html#contact" class="btn-p">Get a Free Quote <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+            <a href="https://wa.me/60192108813" class="btn-s">💬 WhatsApp</a>
+          </div>
+        </div>
+        <div class="rev-r">
+          ${d.highlights.map((h,i)=>`
+          <div class="hl-card reveal" style="transition-delay:${i*.07}s">
+            <div class="hl-icon">${h.icon}</div>
+            <div><div class="hl-title">${h.t}</div><div class="hl-desc">${h.d}</div></div>
+          </div>`).join('')}
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PRODUCT CONSTRUCTION -->
+  <section id="construction">
+    <div class="container">
+      <div class="con-grid">
+        <div class="rev-l">
+          <div class="sec-label">Product Construction</div>
+          <h2 class="sec-head" style="margin-bottom:16px">${d.layerTitle || 'BUILT IN <span class="a">4 LAYERS</span><br>OF SCIENCE'}</h2>
+          <p style="font-size:14px;color:var(--gray);line-height:1.75;margin-bottom:32px">${d.layerDesc || 'Every Taraflex® floor is engineered from four precisely specified layers. Each layer plays a unique role in delivering the performance, safety, and longevity that professional sports demand.'} <strong style="color:var(--white)">Hover each layer to learn more.</strong></p>
+          <div class="con-img-wrap">
+            <div class="con-img-bg"></div>
+            <img class="con-img" src="${d.constructionImg || 'https://www.rentakhiasan.com/wp-content/uploads/2019/03/s850700-q90-51dc0b.jpg'}" alt="Taraflex® product cross-section" onerror="this.style.opacity='0'">
+          </div>
+        </div>
+        <div class="rev-r">
+          <div class="layer-stack">
+            ${(d.layers || LAYERS).map(l=>`
+            <div class="layer" id="lay-${l.num}">
+              <div class="layer-num">${l.num}</div>
+              <div class="layer-bar-wrap">
+                <div class="layer-bar" style="height:${l.height};background:${l.color}">
+                  <span class="layer-icon">${l.icon}</span>
+                  <span class="layer-name">${l.name}</span>
+                  <span class="layer-tag" style="color:var(--accent)">${l.tag}</span>
+                </div>
+                <div class="layer-info">${l.desc}</div>
+              </div>
+            </div>`).join('')}
+          </div>
+          ${d.dryTexNote !== false ? `
+          <div style="margin-top:28px;padding:20px 24px;background:rgba(0,229,160,.05);border:1px solid rgba(0,229,160,.15);border-radius:8px">
+            <div style="font-family:var(--font-m);font-size:9px;letter-spacing:.15em;text-transform:uppercase;color:var(--accent);margin-bottom:8px">Dry-Tex System Available</div>
+            <p style="font-size:13px;color:var(--gray);line-height:1.6">Taraflex® Evolution can be installed using the <strong style="color:var(--white)">Dry-Tex floating system</strong> — no adhesive required. Ideal for temporary setups, portable courts, or buildings with underfloor heating.</p>
+          </div>` : ''}
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- RECOMMENDED PRODUCTS -->
+  <section id="products">
+    <div class="container">
+      <div style="display:flex;justify-content:space-between;align-items:flex-end;margin-bottom:48px;flex-wrap:wrap;gap:24px">
+        <div class="reveal">
+          <div class="sec-label">Recommended Products</div>
+          <h2 class="sec-head">THE RIGHT <span class="a">TARAFLEX®</span><br>FOR THIS COURT</h2>
+        </div>
+        <p class="reveal d2" style="font-size:13px;color:var(--gray);max-width:260px;text-align:right;line-height:1.6">Chosen for ${d.name.toLowerCase()} court performance requirements and usage patterns.</p>
+      </div>
+      <div class="prod-grid">
+        ${d.products.map((p,i)=>`
+        <div class="prod-card reveal" style="transition-delay:${i*.12}s">
+          ${p.rec?'<div class="rec-badge">⭐ Top Recommendation</div>':''}
+          <div class="prod-ico">${p.icon}</div>
+          <div class="prod-code">${p.code}</div>
+          <div class="prod-name">${p.name}</div>
+          <div class="prod-desc">${p.desc}</div>
+          <div class="prod-feats">
+            ${p.feats.map(f=>`<div class="prod-feat">${f}</div>`).join('')}
+          </div>
+        </div>`).join('')}
+      </div>
+    </div>
+  </section>
+
+  <!-- AVAILABLE COLOURS — WHITE BACKGROUND -->
+  <section id="colours">
+    <div class="container">
+      <div class="reveal">
+        <div class="sec-label">Available Colours</div>
+        <h2 class="sec-head">CHOOSE YOUR <span class="a">COLOUR</span></h2>
+        <p class="col-intro">${d.courtColors ? d.courtColors.note : 'Taraflex® is available in an extensive range of colours — from natural wood finishes to bold solid tones. All colours shown are from the official Gerflor® collection.'}</p>
+      </div>
+      <div class="reveal d1">
+        ${d.courtColors ? `
+        <!-- Court-specific colours (no tabs needed) -->
+        <div class="colours-grid" style="grid-template-columns:repeat(auto-fill,minmax(220px,1fr));margin-top:36px">
+          ${d.courtColors.items.map(c=>`
+          <div class="col-card">
+            <div class="col-img-wrap" style="padding-top:75%">
+              <img class="col-img" src="${d.courtColors.base}${c.file}" alt="${c.name}" loading="lazy" onerror="this.parentElement.style.background='#ddd'">
+            </div>
+            <div class="col-name-wrap">
+              <div class="col-code">${c.code}</div>
+              <div class="col-name">${c.name}</div>
+            </div>
+          </div>`).join('')}
+        </div>
+        <div style="margin-top:24px;padding:16px 20px;background:#f0f0ec;border:1px solid #ddd;border-radius:8px;display:inline-flex;align-items:center;gap:10px">
+          <span style="font-size:18px">🏓</span>
+          <span style="font-family:var(--font-m);font-size:10px;letter-spacing:.12em;text-transform:uppercase;color:#666">Official federation-approved colours · Contact us for availability</span>
+        </div>
+        ` : `
+        <!-- Global Evolution colour range (tabs) -->
+        <div class="col-tabs">
+          <button class="col-tab active" onclick="switchTab('uni',this)">Solid Colours (${COLORS.uni.length})</button>
+          <button class="col-tab" onclick="switchTab('wood',this)">Wood Designs (${COLORS.wood.length})</button>
+        </div>
+        <div class="col-panel active" id="tab-uni">
+          <div class="colours-grid">
+            ${COLORS.uni.map(c=>`
+            <div class="col-card">
+              <div class="col-img-wrap">
+                <img class="col-img" src="${BASE_UNI}${c.file}" alt="${c.name}" loading="lazy" onerror="this.parentElement.style.background='#eee'">
+              </div>
+              <div class="col-name-wrap">
+                <div class="col-code">${c.code}</div>
+                <div class="col-name">${c.name}</div>
+              </div>
+            </div>`).join('')}
+          </div>
+        </div>
+        <div class="col-panel" id="tab-wood">
+          <div class="colours-grid" style="grid-template-columns:repeat(auto-fill,minmax(160px,1fr))">
+            ${COLORS.wood.map(c=>`
+            <div class="col-card">
+              <div class="col-img-wrap" style="padding-top:66%">
+                <img class="col-img" src="${BASE_WOOD}${c.file}" alt="${c.name}" loading="lazy" onerror="this.parentElement.style.background='#eee'">
+              </div>
+              <div class="col-name-wrap">
+                <div class="col-code">${c.code}</div>
+                <div class="col-name">${c.name}</div>
+              </div>
+            </div>`).join('')}
+          </div>
+        </div>
+        <div class="col-note">📋 Custom colours available on request · Minimum order quantities apply</div>
+        `}
+      </div>
+    </div>
+  </section>
+
+  <!-- SPECS & CERTS -->
+  <section id="specs">
+    <div class="container">
+      <div class="specs-grid">
+        <div class="rev-l">
+          <div class="sec-label">Technical Specifications</div>
+          <h2 class="sec-head">COURT SPECS<br>& <span class="a">STANDARDS</span></h2>
+          <div class="spec-table">
+            ${d.specs.map(s=>`
+            <div class="spec-row">
+              <span class="spec-label">${s.l}</span>
+              <span class="spec-val ${s.hi?'hi':''}">${s.v}</span>
+            </div>`).join('')}
+          </div>
+        </div>
+        <div class="rev-r">
+          <div class="sec-label">Certifications</div>
+          <h2 class="sec-head">CERTIFIED<br>& <span class="a">APPROVED</span></h2>
+          <div class="cert-list">
+            ${d.certs.map(c=>`
+            <div class="cert">
+              <div class="cert-ico">${c.i}</div>
+              <div><div class="cert-name">${c.n}</div><div class="cert-desc">${c.d}</div></div>
+            </div>`).join('')}
+          </div>
+          <div class="gerflor-note">
+            <div class="gn-label">About Taraflex® by Gerflor</div>
+            <p class="gn-text">Established in <strong>1947</strong>, Gerflor is the world leader in indoor sports flooring. Taraflex® has been installed in <strong>100+ countries</strong> and selected for <strong>10 consecutive Olympic Games</strong> from Montreal 1976 to London 2012.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- IDEAL FOR -->
+  <section id="ideal">
+    <div class="container">
+      <div class="ideal-grid">
+        <div class="rev-l">
+          <div class="sec-label">Ideal Clients</div>
+          <h2 class="sec-head">WHO IS<br>THIS <span class="a">FOR?</span></h2>
+          <p style="font-size:14px;color:var(--gray);line-height:1.75;margin-top:20px">Whether you're a contractor tendering a project, a developer adding sports amenities, or a facility manager upgrading courts — we have the right solution and full support.</p>
+          <div class="process-list">
+            <div class="proc-item"><div class="proc-n">01</div><div><div class="proc-title">Consult</div><div class="proc-desc">Discuss your requirements, site conditions, and performance expectations.</div></div></div>
+            <div class="proc-item"><div class="proc-n">02</div><div><div class="proc-title">Survey</div><div class="proc-desc">Site visit, measurements, and detailed technical proposal with product recommendation.</div></div></div>
+            <div class="proc-item"><div class="proc-n">03</div><div><div class="proc-title">Install</div><div class="proc-desc">Certified installation team from site prep to court line marking.</div></div></div>
+            <div class="proc-item"><div class="proc-n">04</div><div><div class="proc-title">Handover</div><div class="proc-desc">Full inspection, documentation, and your court ready for play.</div></div></div>
+          </div>
+        </div>
+        <div class="rev-r">
+          <div class="ideal-cards">
+            ${d.idealFor.map((item,i)=>`
+            <div class="ideal-card reveal" style="transition-delay:${i*.08}s">
+              <div class="ic-icon">${item.i}</div>
+              <div class="ic-title">${item.t}</div>
+              <div class="ic-desc">${item.d}</div>
+            </div>`).join('')}
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section id="cta">
+    <div class="container">
+      <div class="cta-box reveal">
+        <h2 class="cta-title">READY TO BUILD YOUR<br><span class="a">${d.name.toUpperCase()}</span> COURT?</h2>
+        <p class="cta-desc">Get a free quote and consultation. We'll recommend the exact product for your project, budget, and performance requirements.</p>
+        <div class="cta-btns">
+          <a href="index.html#contact" class="btn-p">Get a Free Quote <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+          <a href="https://wa.me/60192108813" class="btn-s">💬 WhatsApp Us</a>
+        </div>
+        <div class="cta-contacts">
+          <div class="cc-item"><span class="cc-label">Phone</span><a href="tel:+60320951633" class="cc-val">+603 2095 1633</a></div>
+          <div class="cc-item"><span class="cc-label">WhatsApp</span><a href="https://wa.me/60192108813" class="cc-val">+6019 210 8813</a></div>
+          <div class="cc-item"><span class="cc-label">Email</span><a href="mailto:rentakhiasan@yahoo.com" class="cc-val">rentakhiasan@yahoo.com</a></div>
+        </div>
+      </div>
+    </div>
+  </section>`;
+
+  initAll();
+}
+
+// ─── COLOUR TAB SWITCHER ──────────────────────────────────────
+function switchTab(tab, btn) {
+  document.querySelectorAll('.col-tab').forEach(b => b.classList.remove('active'));
+  document.querySelectorAll('.col-panel').forEach(p => p.classList.remove('active'));
+  btn.classList.add('active');
+  document.getElementById('tab-'+tab).classList.add('active');
+}
+
+// ─── LAYER HOVER ─────────────────────────────────────────────
+function initLayers() {
+  document.querySelectorAll('.layer').forEach(l => {
+    l.addEventListener('mouseenter', () => l.classList.add('active'));
+    l.addEventListener('mouseleave', () => l.classList.remove('active'));
+  });
+}
+
+// ─── OBSERVERS ───────────────────────────────────────────────
+function initAll() {
+  const obs = new IntersectionObserver(entries => {
+    entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); });
+  }, { threshold: 0.07, rootMargin: '0px 0px -40px 0px' });
+  document.querySelectorAll('.reveal,.rev-l,.rev-r').forEach(el => obs.observe(el));
+  initLayers();
+}
+
+// ─── NAV SCROLL ───────────────────────────────────────────────
+function openMobile(){document.getElementById('mobileMenu').classList.add('open');document.body.style.overflow='hidden'}
+function closeMobile(){document.getElementById('mobileMenu').classList.remove('open');document.body.style.overflow=''}
+window.addEventListener('scroll', () => {
+  document.getElementById('nav').classList.toggle('scrolled', scrollY > 50);
+  document.getElementById('st').classList.toggle('show', scrollY > 500);
+});
+
+// ─── CURSOR ───────────────────────────────────────────────────
+const cur = document.getElementById('cur');
+document.addEventListener('mousemove', e => { cur.style.left=e.clientX+'px'; cur.style.top=e.clientY+'px'; });
+
+// ─── INIT ─────────────────────────────────────────────────────
+render();
+</script>
+</body>
+</html>

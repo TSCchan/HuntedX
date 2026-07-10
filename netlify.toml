@@ -1,0 +1,9 @@
+[build]
+  publish = "."
+  command = ""
+
+[[headers]]
+  for = "/*.pdf"
+  [headers.values]
+    Content-Type = "application/pdf"
+
