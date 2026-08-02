@@ -227,7 +227,8 @@ body{background:var(--bg);color:var(--text);font-family:var(--font-b);line-heigh
 .col-panel{display:none}.col-panel.active{display:block}
 /* Note bar */
 .col-note{
-  margin-top:36px;display:inline-flex;align-items:center;gap:10px;
+  display:none;
+  margin-top:36px;align-items:center;gap:10px;
   font-family:var(--font-m);font-size:10px;letter-spacing:.12em;text-transform:uppercase;
   color:#2A6350;padding:11px 20px;
   border:1px solid rgba(22,169,122,.3);border-radius:100px;
@@ -797,7 +798,6 @@ function render(pid) {
       <h2 class="sec-head" style="margin-top:8px">CHOOSE YOUR <span class="a">COLOUR</span></h2>
       <p class="col-intro">Taraflex® is available in an extensive range of colours — from natural wood finishes to bold solid tones. Click any swatch to view the full-size image. All colours are from the official Gerflor® collection.</p>
       ${colHtml}
-      <div class="col-note">📦 Contact us for physical samples · +603 2095 1633</div>
     </div>
   </section>
 
