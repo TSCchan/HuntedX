@@ -168,13 +168,15 @@ section{padding:96px 0}
 .td-a{color:var(--green-br);font-family:var(--font-m);font-size:11px}
 
 /* APPLICATIONS GRID */
-.apps-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-top:36px}
+.apps-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:40px}
 @media(max-width:900px){.apps-grid{grid-template-columns:repeat(2,1fr)}}
-.app-card{padding:22px 16px;background:#FFFFFF;border:1px solid var(--border);border-radius:10px;text-align:center;transition:all .3s}
+@media(max-width:560px){.apps-grid{grid-template-columns:1fr}}
+.app-card{padding:28px;background:#FFFFFF;border:1px solid var(--border);border-radius:14px;text-align:center;transition:all .35s}
 .app-card:hover{border-color:rgba(22,169,122,.25);transform:translateY(-3px)}
-.app-ico{font-size:28px;margin-bottom:10px}
-.app-name{font-family:var(--font-d);font-size:12px;font-weight:700;text-transform:uppercase;margin-bottom:4px}
-.app-sub{font-size:11px;color:var(--text-2)}
+.app-ico{font-size:28px;margin-bottom:12px}
+.app-name{font-family:var(--font-d);font-size:16px;font-weight:900;text-transform:uppercase;margin-bottom:4px}
+.app-fed{font-family:var(--font-m);font-size:9px;letter-spacing:.14em;text-transform:uppercase;color:var(--green-br);margin-bottom:10px}
+.app-desc{font-size:12px;color:var(--text-2);line-height:1.6}
 
 /* COLOUR SECTION — exact court.html values */
 #colours-section{background:#F5F5F0;padding:96px 0}
@@ -388,13 +390,12 @@ footer{background:var(--bg-warm);border-top:1px solid var(--border);padding:32px
     <div class="sec-label reveal">Ideal Environments</div>
     <h2 class="sec-head reveal d1">WHERE RF RUBBER TILE <span class="a">IS SPECIFIED</span></h2>
     <div class="apps-grid">
-      <div class="app-card reveal d1"><div class="app-ico">🏋️</div><div class="app-name">Gym & Fitness</div><div class="app-sub">Free Weights & Equipment Areas</div></div>
-      <div class="app-card reveal d2"><div class="app-ico">🧸</div><div class="app-name">Kindergarten</div><div class="app-sub">Child-Safe Indoor Surfaces</div></div>
-      <div class="app-card reveal d3"><div class="app-ico">🛝</div><div class="app-name">Playground</div><div class="app-sub">Fall-Protection Grade</div></div>
-      <div class="app-card reveal d1"><div class="app-ico">🏊</div><div class="app-name">Pool Surrounds</div><div class="app-sub">Wet Area Safety</div></div>
-      <div class="app-card reveal d2"><div class="app-ico">🏥</div><div class="app-name">Rehab Centres</div><div class="app-sub">Joint-Protective Surfaces</div></div>
-      <div class="app-card reveal d3"><div class="app-ico">🏢</div><div class="app-name">Commercial Spaces</div><div class="app-sub">High Safety Factor Required</div></div>
-      <div class="app-card reveal d4"><div class="app-ico">🏠</div><div class="app-name">Home Gyms</div><div class="app-sub">Easy DIY Installation</div></div>
+      <div class="app-card reveal d1"><div class="app-ico">🏋️</div><div class="app-name">Gym & Fitness</div><div class="app-fed">Free Weights & Equipment</div><p class="app-desc">Shock-absorbing laminated rubber withstands heavy equipment, dropped weights and intensive training.</p></div>
+      <div class="app-card reveal d2"><div class="app-ico">🧸</div><div class="app-name">Kindergarten</div><div class="app-fed">Child-Safe Surfaces</div><p class="app-desc">Elastic cushioning supports safer indoor activity areas for nurseries and early-learning facilities.</p></div>
+      <div class="app-card reveal d3"><div class="app-ico">🛝</div><div class="app-name">Playgrounds</div><div class="app-fed">Impact Protection</div><p class="app-desc">Comfortable rubber tiles help absorb impact in children’s play and high-activity environments.</p></div>
+      <div class="app-card reveal d1"><div class="app-ico">🏥</div><div class="app-name">Rehabilitation Centres</div><div class="app-fed">Joint-Protective Surface</div><p class="app-desc">Resilient underfoot comfort supports rehabilitation, therapy and low-impact exercise spaces.</p></div>
+      <div class="app-card reveal d2"><div class="app-ico">🏢</div><div class="app-name">Commercial Spaces</div><div class="app-fed">High Safety Factor</div><p class="app-desc">Durable, easy-clean tile construction suits busy facilities requiring comfort and sound absorption.</p></div>
+      <div class="app-card reveal d3"><div class="app-ico">🏠</div><div class="app-name">Home Gyms</div><div class="app-fed">Easy Installation</div><p class="app-desc">Tile format enables practical installation, removal and maintenance for personal workout spaces.</p></div>
     </div>
   </div>
 </section>

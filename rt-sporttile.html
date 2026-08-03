@@ -211,13 +211,15 @@ section{padding:96px 0}
 .col-note-light{margin-top:28px;display:inline-flex;align-items:center;gap:10px;font-family:var(--font-m);font-size:10px;letter-spacing:.12em;text-transform:uppercase;color:#888;padding:10px 18px;border:1px solid #ddd;border-radius:100px;background:#f0f0ec}
 
 /* APPLICATIONS */
-.apps-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-top:36px}
+.apps-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:40px}
 @media(max-width:900px){.apps-grid{grid-template-columns:repeat(2,1fr)}}
-.app-card{padding:20px;background:#FFFFFF;border:1px solid var(--border);border-radius:10px;text-align:center;transition:all .3s}
+@media(max-width:560px){.apps-grid{grid-template-columns:1fr}}
+.app-card{padding:28px;background:#FFFFFF;border:1px solid var(--border);border-radius:14px;text-align:center;transition:all .35s}
 .app-card:hover{border-color:rgba(22,169,122,.25);transform:translateY(-3px)}
-.app-ico{font-size:26px;margin-bottom:10px}
-.app-name{font-family:var(--font-d);font-size:12px;font-weight:700;text-transform:uppercase;margin-bottom:3px}
-.app-sub{font-size:11px;color:var(--text-2)}
+.app-ico{font-size:28px;margin-bottom:12px}
+.app-name{font-family:var(--font-d);font-size:16px;font-weight:900;text-transform:uppercase;margin-bottom:4px}
+.app-fed{font-family:var(--font-m);font-size:9px;letter-spacing:.14em;text-transform:uppercase;color:var(--green-br);margin-bottom:10px}
+.app-desc{font-size:12px;color:var(--text-2);line-height:1.6}
 
 /* CTA */
 #cta{background:var(--bg-warm);padding:96px 0;border-top:1px solid var(--border)}
@@ -511,14 +513,12 @@ footer{background:var(--bg-warm);border-top:1px solid var(--border);padding:32px
     <div class="sec-label reveal">Court Applications</div>
     <h2 class="sec-head reveal d1">WHERE RT SPORTTILE<br><span class="a">PERFORMS BEST</span></h2>
     <div class="apps-grid">
-      <div class="app-card reveal d1"><div class="app-ico">🏀</div><div class="app-name">Basketball</div><div class="app-sub">Outdoor & Indoor</div></div>
-      <div class="app-card reveal d2"><div class="app-ico">🥒</div><div class="app-name">Pickleball</div><div class="app-sub">IFP Approved</div></div>
-      <div class="app-card reveal d3"><div class="app-ico">🎾</div><div class="app-name">Tennis</div><div class="app-sub">Indoor & Outdoor</div></div>
-      <div class="app-card reveal d4"><div class="app-ico">⚽</div><div class="app-name">Futsal</div><div class="app-sub">Outdoor Courts</div></div>
-      <div class="app-card reveal d1"><div class="app-ico">🛼</div><div class="app-name">Roller Skating</div><div class="app-sub">Rink Construction</div></div>
-      <div class="app-card reveal d2"><div class="app-ico">🏒</div><div class="app-name">Hockey</div><div class="app-sub">Field Courts</div></div>
-      <div class="app-card reveal d3"><div class="app-ico">🏫</div><div class="app-name">School Yards</div><div class="app-sub">Kindergarten & Education</div></div>
-      <div class="app-card reveal d4"><div class="app-ico">🏘️</div><div class="app-name">Residential Parks</div><div class="app-sub">Community Courts</div></div>
+      <div class="app-card reveal d1"><div class="app-ico">🏀</div><div class="app-name">Basketball</div><div class="app-fed">Indoor & Outdoor</div><p class="app-desc">NBA-inspired modular construction provides responsive ball bounce, grip and impact cushioning.</p></div>
+      <div class="app-card reveal d2"><div class="app-ico">🥒</div><div class="app-name">Pickleball</div><div class="app-fed">PickleBound System</div><p class="app-desc">Dense hole-and-bump texture delivers dependable slip resistance and concrete-like ball rebound.</p></div>
+      <div class="app-card reveal d3"><div class="app-ico">🎾</div><div class="app-name">Tennis</div><div class="app-fed">RT Diamond</div><p class="app-desc">Cross-pattern modular tiles support consistent tennis ball trajectory on indoor and outdoor courts.</p></div>
+      <div class="app-card reveal d1"><div class="app-ico">⚽</div><div class="app-name">Futsal</div><div class="app-fed">Outdoor Courts</div><p class="app-desc">Durable interlocking tiles handle fast footwork, repeated play and demanding outdoor use.</p></div>
+      <div class="app-card reveal d2"><div class="app-ico">🛼</div><div class="app-name">Roller Skating</div><div class="app-fed">Rink Construction</div><p class="app-desc">A stable modular surface suited to recreational skating areas and multipurpose rink layouts.</p></div>
+      <div class="app-card reveal d3"><div class="app-ico">🏫</div><div class="app-name">School & Community Courts</div><div class="app-fed">Flexible Facilities</div><p class="app-desc">Low-maintenance modular flooring for school yards, residential parks and shared community courts.</p></div>
     </div>
   </div>
 </section>

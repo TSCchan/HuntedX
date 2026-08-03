@@ -119,13 +119,15 @@ section{padding:96px 0}
 .spec-row-l{font-family:var(--font-m);font-size:10px;letter-spacing:.08em;text-transform:uppercase;color:rgba(255,255,255,.45);flex:1}
 .spec-row-v{font-family:var(--font-m);font-size:11px;color:var(--green-br);text-align:right}
 /* Apps */
-.apps-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-top:36px}
+.apps-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:40px}
 @media(max-width:900px){.apps-grid{grid-template-columns:repeat(2,1fr)}}
-.app-card{padding:20px;background:#FFFFFF;border:1px solid var(--border);border-radius:10px;text-align:center;transition:all .3s}
+@media(max-width:560px){.apps-grid{grid-template-columns:1fr}}
+.app-card{padding:28px;background:#FFFFFF;border:1px solid var(--border);border-radius:14px;text-align:center;transition:all .35s}
 .app-card:hover{border-color:rgba(22,169,122,.25);transform:translateY(-3px)}
-.app-ico{font-size:26px;margin-bottom:10px}
-.app-name{font-family:var(--font-d);font-size:12px;font-weight:700;text-transform:uppercase;margin-bottom:3px}
-.app-sub{font-size:11px;color:var(--text-2)}
+.app-ico{font-size:28px;margin-bottom:12px}
+.app-name{font-family:var(--font-d);font-size:16px;font-weight:900;text-transform:uppercase;margin-bottom:4px}
+.app-fed{font-family:var(--font-m);font-size:9px;letter-spacing:.14em;text-transform:uppercase;color:var(--green-br);margin-bottom:10px}
+.app-desc{font-size:12px;color:var(--text-2);line-height:1.6}
 /* Colours — court.html exact */
 #colours-section{background:#F5F5F0;padding:96px 0}
 #colours-section .sec-label{color:#1a1a2e}
@@ -360,10 +362,12 @@ footer{background:var(--bg-warm);border-top:1px solid var(--border);padding:32px
     <div class="sec-label reveal">Court Applications</div>
     <h2 class="sec-head reveal d1">WHERE QUICKLAY<br><span class="a">EXCELS</span></h2>
     <div class="apps-grid">
-      <div class="app-card reveal d1"><div class="app-ico">🥒</div><div class="app-name">Pickleball</div><div class="app-sub">Primary Application</div></div>
-      <div class="app-card reveal d2"><div class="app-ico">🎾</div><div class="app-name">Tennis</div><div class="app-sub">ITF Certified</div></div>
-      <div class="app-card reveal d3"><div class="app-ico">🏟️</div><div class="app-name">Multi-Court Facilities</div><div class="app-sub">Indoor & Outdoor</div></div>
-      <div class="app-card reveal d4"><div class="app-ico">🏠</div><div class="app-name">Home & Community Courts</div><div class="app-sub">Fast, Low-Disruption Install</div></div>
+      <div class="app-card reveal d1"><div class="app-ico">🥒</div><div class="app-name">Pickleball</div><div class="app-fed">Primary Application</div><p class="app-desc">Prefabricated acrylic performance with reliable grip, consistent rebound and rapid court installation.</p></div>
+      <div class="app-card reveal d2"><div class="app-ico">🎾</div><div class="app-name">Tennis</div><div class="app-fed">ITF Certified</div><p class="app-desc">ITF-certified surface performance for training, club and competition-standard tennis courts.</p></div>
+      <div class="app-card reveal d3"><div class="app-ico">🏠</div><div class="app-name">Indoor Courts</div><div class="app-fed">Low-Disruption Install</div><p class="app-desc">Roll-out construction delivers a finished indoor court without lengthy on-site coating work.</p></div>
+      <div class="app-card reveal d1"><div class="app-ico">☀️</div><div class="app-name">Outdoor Courts</div><div class="app-fed">Prefabricated Surface</div><p class="app-desc">A practical alternative to liquid acrylic for outdoor pickleball and tennis installations.</p></div>
+      <div class="app-card reveal d2"><div class="app-ico">🏟️</div><div class="app-name">Multi-Court Facilities</div><div class="app-fed">Custom Colours & Logos</div><p class="app-desc">Coordinated colours, patterns and branding support clubs and professional multi-court venues.</p></div>
+      <div class="app-card reveal d3"><div class="app-ico">🏘️</div><div class="app-name">Home & Community Courts</div><div class="app-fed">Quick Installation</div><p class="app-desc">Full court installation can be completed in 2 hours with minimal disruption to the site.</p></div>
     </div>
   </div>
 </section>
