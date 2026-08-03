@@ -592,6 +592,8 @@ const IMPRESSION_COLORS=list('0373 NOMA ICE|0519 NOMA BEIGE|0523 CEMENTO GENOVA|
 HETEROGENEOUS_FAMILIES.find(x=>x.slug==='taralay-impression-acoustic').colors=IMPRESSION_COLORS;
 HETEROGENEOUS_FAMILIES.find(x=>x.slug==='taralay-impression-compact').colors=IMPRESSION_COLORS;
 HETEROGENEOUS_FAMILIES.find(x=>x.slug==='transit-classic').colors=list('0201 COLUMBO BRUYERE|0209 COLUMBO EBENE|0210 COLUMBO JAIS|0211 COLUMBO CHROME|0227 WALNUT WHEAT|0228 WALNUT PEARL|0229 WALNUT CAPPUCCINO|0230 AMBOISE STRAW|0231 AMBOISE GOLDEN|0232 TEXTURA PINE|0233 TEXTURA TEA|0234 COLUMBO EGG|0235 COLUMBO SKY|0236 COLUMBO GRASS|0237 COLUMBO PINK|0238 COLUMBO KUMQUAT|0239 SWISS STONE LIGHT GRAY|0240 SWISS STONE DARK GRAY|0241 SWISS STONE MID GRAY|0242 SWISS STONE LIGHT BEIGE|0243 SWISS STONE BEIGE|0244 COMPOSE BLUE GRAY|0245 COMPOSE MID BEIGE|0303 TEXTURA CHOCOLAT|0304 TEXTURA CREAM|0307 TEXTURA CIEL|0309 TEXTURA ASH|0310 TEXTURA ACIER|0311 TEXTURA SMOKE|0312 TEXTURA RUBY|0501 WALNUT YELLOW GREY');
+const HETEROGENEOUS_EXCLUDED=new Set(['premium-acoustic','premium-compact','taralay-impression-acoustic','taralay-impression-compact']);
+for(let i=HETEROGENEOUS_FAMILIES.length-1;i>=0;i--){if(HETEROGENEOUS_EXCLUDED.has(HETEROGENEOUS_FAMILIES[i].slug))HETEROGENEOUS_FAMILIES.splice(i,1);}
 
 const GERFLOR_PRODS={
   'gf-homogeneous':{title:'Homogeneous',tag:'Single-layer commercial vinyl flooring for healthcare, education, public buildings and heavy-traffic interiors.',families:HOMOGENEOUS_FAMILIES,type:'Homogeneous'},
@@ -908,7 +910,7 @@ document.querySelectorAll('.reveal,.rev-l,.rev-r').forEach(el=>el.classList.add(
           <div style="display:flex;flex-direction:column;gap:10px;margin-bottom:24px">
             <div style="display:flex;gap:10px;align-items:flex-start">
               <span style="color:var(--green-br);font-size:13px;flex-shrink:0">✦</span>
-              <span style="font-size:13px;color:var(--text-2)"><strong style="color:var(--text)">6 product lines</strong> — Premium Acoustic, Premium Compact, Taralay Emotion Compact, Taralay Impression Acoustic, Taralay Impression Compact, Transit Classic</span>
+              <span style="font-size:13px;color:var(--text-2)"><strong style="color:var(--text)">2 product lines</strong> — Taralay Emotion Compact and Transit Classic</span>
             </div>
             <div style="display:flex;gap:10px;align-items:flex-start">
               <span style="color:var(--green-br);font-size:13px;flex-shrink:0">✦</span>
