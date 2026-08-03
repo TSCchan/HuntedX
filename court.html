@@ -846,6 +846,7 @@ function render() {
   </section>
 
   <!-- RECOMMENDED PRODUCTS -->
+  ${!['tabletennis','futsal'].includes(key) ? `
   <section id="products">
     <div class="container">
       <div style="display:flex;justify-content:space-between;align-items:flex-end;margin-bottom:48px;flex-wrap:wrap;gap:24px">
@@ -870,6 +871,7 @@ function render() {
       </div>
     </div>
   </section>
+  ` : ''}
 
   <!-- AVAILABLE COLOURS — WHITE BACKGROUND -->
   <section id="colours">
