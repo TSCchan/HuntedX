@@ -558,6 +558,9 @@ a.cta-c-val:hover { color:var(--green-br); }
 .c-block-val { font-size:15px; color:var(--text); line-height:1.7; text-decoration:none; }
 a.c-block-val { transition:color .3s; display:block; }
 a.c-block-val:hover { color:var(--green-br); }
+.map-links { display:flex; gap:10px; flex-wrap:wrap; margin-top:12px; }
+.map-link { display:inline-flex; align-items:center; gap:7px; padding:8px 12px; border:1px solid var(--border); border-radius:100px; color:var(--green); background:var(--bg-alt); font-family:var(--font-m); font-size:9px; font-weight:700; letter-spacing:.1em; text-transform:uppercase; text-decoration:none; transition:all .25s; }
+.map-link:hover { color:#fff; background:var(--green); border-color:var(--green); transform:translateY(-1px); }
 .c-form { display:flex; flex-direction:column; gap:14px; }
 .f-row { display:grid; grid-template-columns:1fr 1fr; gap:14px; }
 @media(max-width:480px){ .f-row { grid-template-columns:1fr; } }
@@ -1381,7 +1384,14 @@ footer { background:var(--green); padding:64px 0 36px; }
         <h2 class="sec-title reveal d1" style="margin-top:18px">LET'S BUILD SOMETHING <span class="acc">GREAT</span></h2>
         <p class="sec-sub reveal d2">Whether you're a contractor, developer, architect, Quantity Surveyor (QS), or facility manager — we're ready to discuss your project.</p>
         <div class="c-addr">
-          <div class="reveal d1"><div class="c-block-lbl">Address</div><div class="c-block-val">207, Block C, Pusat Dagangan Phileo Damansara 1,<br>No 9, Jalan 16/11, Off Jalan Damansara,<br>46350 Petaling Jaya, Selangor, Malaysia</div></div>
+          <div class="reveal d1">
+            <div class="c-block-lbl">Address</div>
+            <div class="c-block-val">207, Block C, Pusat Dagangan Phileo Damansara 1,<br>No 9, Jalan 16/11, Off Jalan Damansara,<br>46350 Petaling Jaya, Selangor, Malaysia</div>
+            <div class="map-links">
+              <a class="map-link" href="https://www.google.com/maps/search/?api=1&amp;query=207%2C%20Block%20C%2C%20Pusat%20Dagangan%20Phileo%20Damansara%201%2C%20No%209%2C%20Jalan%2016%2F11%2C%20Off%20Jalan%20Damansara%2C%2046350%20Petaling%20Jaya%2C%20Selangor%2C%20Malaysia" target="_blank" rel="noopener noreferrer">📍 Google Maps</a>
+              <a class="map-link" href="https://www.waze.com/ul?q=207%2C%20Block%20C%2C%20Pusat%20Dagangan%20Phileo%20Damansara%201%2C%20No%209%2C%20Jalan%2016%2F11%2C%20Off%20Jalan%20Damansara%2C%2046350%20Petaling%20Jaya%2C%20Selangor%2C%20Malaysia&amp;navigate=yes" target="_blank" rel="noopener noreferrer">🚗 Waze</a>
+            </div>
+          </div>
           <div class="reveal d2"><div class="c-block-lbl">Office Phone</div><a href="tel:+60320951633" class="c-block-val">+603 2095 1633</a></div>
           <div class="reveal d3"><div class="c-block-lbl">Mobile / WhatsApp</div><a href="https://wa.me/60192108813" class="c-block-val">+6019 210 8813</a></div>
           <div class="reveal d4"><div class="c-block-lbl">Email</div><a href="mailto:rentakhiasan@yahoo.com" class="c-block-val">rentakhiasan@yahoo.com</a></div>
